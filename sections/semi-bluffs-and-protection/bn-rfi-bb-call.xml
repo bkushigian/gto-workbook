@@ -56,8 +56,8 @@
   </question>
 </flop-questions>
 <hand-questions>
-  <question>Should you bet this hand and expect better hands to fold?</question>
-  <question>Should you bet this hand and expect worse hands to call?</question>
+  <question>If you you bet this hand should you expect better hands to fold?</question>
+  <question>If you you bet this hand should you expect worse hands to call?</question>
   <question>Does this hand benefit from a protection bet?</question>
   <question>Does this hand benefit from growing the pot?</question>
   <question>How is this hand doing if you bet and get called?</question>
