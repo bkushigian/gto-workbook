@@ -44,21 +44,19 @@
   </question>
   <question>
     What are the literal nuts on this flop (irrespective of whether either player has this in their range)?
-  </question>
-  <question>
     Does either player have the nuts? If not, what is each player's strongest holdings?
   </question>
   <question>
-    Which turn cards can change which hands are nutty? How about turn/river combinations?
+    Which player has the nuts advantage?
   </question>
   <question>
-    Which player has the nuts advantage? Is it the same player with the equity advantage?
+    What are the best and worst turn cards for hero's range? For villain's range?
   </question>
   <question>
     What is each player's incentive on this flop?
   </question>
   <question>
-    What is this flop's story?
+    What is the story of this flop?
     <!-- TODO: this is a placeholder question. I want something open-ended that asks the user to think at a higher level about
                 the flop's general narrative (Is it likely that players will be playing around possible flushes and straights?
                 Which cards will make the biggest difference in each players incentives?).
@@ -66,12 +64,10 @@
   </question>
 </questions>
 <hand-questions>
-  <question>If this hand bets, how often can it expect better hands to fold?</question>
-  <question>If this hand bets, how often can it expect worse hands to call?</question>
-  <question>How much does this hand benefit from fold equity?</question>
-  <question>Does this hand want to play for stacks?</question>
-  <question>What are the incentives of this hand?</question>
-  <question>What are the best turn cards for this hand?</question>
-  <question>What are the worst turn cards for this hand?</question>
+  <question>Should this hand bet and expect better hands to fold?</question>
+  <question>Should this hand bet and expect worse hands to call?</question>
+  <question>Can this hand expect to benefit from fold equity?</question>
+  <question>What are this hand's incentives on this flop?</question>
+  <question>What are the best and worst turn cards for this hand?</question>
 </hand-questions>
 </document>
