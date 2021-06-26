@@ -12,7 +12,7 @@ import random
 import os.path as osp
 import pathlib
 
-random.seed(12345)
+SEED = 12345
 
 ranks = "23456789TJQKA"
 suits = "hsdc"
@@ -346,6 +346,7 @@ def main():
         stem = pathlib.Path(file).stem + "-questions"
         output_file = stem + "." + file_format_extensions[format]
 
+    random.seed(SEED)
     t = Transformer(file)
 
     if format == 'text' or format == 'txt':
