@@ -27,9 +27,9 @@ def suit_to_html(cardstring):
     cardstring = cardstring.replace("c", "C")
     cardstring = cardstring.replace("s", "S")
     cardstring = cardstring.replace("H", "<span style=\"color:#ff0000;\">&hearts;</span>")
-    cardstring = cardstring.replace("D", "<span style=\"color:#ff0000;\">&diams;</span>")
-    cardstring = cardstring.replace("C", "&clubs;")
-    cardstring = cardstring.replace("S", "&spades;")
+    cardstring = cardstring.replace("D", "<span style=\"color:#0088ff;\">&diams;</span>")
+    cardstring = cardstring.replace("C", "<span style=\"color:#008800;\">&clubs;</span>")
+    cardstring = cardstring.replace("S", "<span style=\"color:#000000;\">&spades;</span>")
     return cardstring
 
 def is_suited(combo):
