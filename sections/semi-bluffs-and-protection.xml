@@ -37,9 +37,6 @@
 
 <flop-questions>
   <question>
-    How static or dynamic is this flop? What aspects of this flop make it more static or dynamic?  How do these aspects interact with one another?
-  </question>
-  <question>
     Approximate each player's equity. Who has the equity advantage?
   </question>
   <question>
@@ -47,6 +44,9 @@
   </question>
   <question>
     Which player has the nuts advantage?
+  </question>
+  <question>
+    How static or dynamic is this flop? What aspects of this flop make it more static or dynamic?  How do these aspects interact with one another?
   </question>
   <question>
     Suppose you bet and villain calls. What are the best and worst turn cards for your range?
