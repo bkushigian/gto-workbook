@@ -62,7 +62,7 @@
   <question>Does this hand benefit from growing the pot?</question>
   <question>How is this hand doing if you bet and get called?</question>
   <question>How is this hand doing against a check-raise?</question>
-  <question>What are this hand's incentives on this flop?</question>
-  <question>What turn cards are best or worst for this hand?</question>
+  <question>What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer?</question>
+  <question>Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?</question>
 </hand-questions>
 </document>
