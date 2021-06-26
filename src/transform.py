@@ -327,22 +327,31 @@ class Transformer:
         with open(filename, "w") as f:
             f.write(self.as_markdown())
 
-
+file_format_extensions = {"md" : "md", "markdown": "md", "txt": "txt", "text": "txt"}
 
 def main():
     from sys import argv, exit
-    if len(argv) != 3:
-        print("usage: transform.py file.xml format")
+    if len(argv) < 3 or len(argv) > 4:
+        print("usage: transform.py file.xml format [output]")
         exit(1)
     file = argv[1]
     format = argv[2]
 
+    if format not in file_format_extensions:
+        raise RuntimeError("Unrecognized output format: " + format)
+
+    if len(argv) == 4:
+        output_file = argv[3]
+    else:
+        stem = pathlib.Path(file).stem + "-questions"
+        output_file = stem + "." + file_format_extensions[format]
+
     t = Transformer(file)
-    stem = pathlib.Path(file).stem + "-questions"
+
     if format == 'text' or format == 'txt':
-        t.to_text_file(stem + ".txt")
+        t.to_text_file(output_file)
     elif format == 'md' or format == 'markdown':
-        t.to_markdown_file(stem + ".md")
+        t.to_markdown_file(output_file)
     else:
         print("Unknown format: " + format)
         exit(1)
