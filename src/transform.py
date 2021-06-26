@@ -237,7 +237,7 @@ class Transformer:
         root = ET.parse(xml_file).getroot()
         self.root = root
         self.flops = [f.text for f in root.find('flops')]
-        self.flop_questions = [q.text.strip() for q in root.find('questions')]
+        self.flop_questions = [q.text.strip() for q in root.find('flop-questions')]
         self.hand_questions = [q.text.strip() for q in root.find('hand-questions')]
         scenarios = root.find('scenarios')
         assert scenarios is not None

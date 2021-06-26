@@ -35,7 +35,7 @@
   <flop>7s6s6d</flop>
 </flops>
 
-<questions>
+<flop-questions>
   <question>
     How static or dynamic is this flop?
   </question>
@@ -56,13 +56,13 @@
     What is each player's incentive on this flop?
   </question>
   <question>
-    What is the story of this flop?
+    What is this flop's story?
     <!-- TODO: this is a placeholder question. I want something open-ended that asks the user to think at a higher level about
                 the flop's general narrative (Is it likely that players will be playing around possible flushes and straights?
                 Which cards will make the biggest difference in each players incentives?).
     -->
   </question>
-</questions>
+</flop-questions>
 <hand-questions>
   <question>Should this hand bet and expect better hands to fold?</question>
   <question>Should this hand bet and expect worse hands to call?</question>
