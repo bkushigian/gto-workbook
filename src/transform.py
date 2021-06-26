@@ -270,7 +270,7 @@ class Transformer:
                 combos = scenario.hero.range.combos()
                 random.shuffle(combos)
                 for h, combo in  enumerate(combos[:10]):
-                    hands = expand_combo(combo)
+                    hands = expand_combo(combo, deadcards=flop_list)
                     random.shuffle(hands)
                     hand = hands[0]
                     lines.append("{}. {} (Flop: {})".format(h+1, format_card_str(hand), suit_to_html(f)))
