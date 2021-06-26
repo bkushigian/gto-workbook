@@ -343,12 +343,12 @@ def main():
     if len(argv) == 4:
         output_file = argv[3]
     else:
-        stem = pathlib.Path(file).stem + "-questions"
-        output_file = stem + "." + file_format_extensions[format]
+        output_file = osp.splitext(file)[0] + "-questions." + file_format_extensions[format]
 
     random.seed(SEED)
     t = Transformer(file)
 
+    print("writing to", output_file)
     if format == 'text' or format == 'txt':
         t.to_text_file(output_file)
     elif format == 'md' or format == 'markdown':
