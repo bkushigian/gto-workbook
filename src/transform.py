@@ -30,7 +30,6 @@ def suit_to_html(cardstring):
     cardstring = cardstring.replace("D", "<span style=\"color:#ff0000;\">&diams;</span>")
     cardstring = cardstring.replace("C", "&clubs;")
     cardstring = cardstring.replace("S", "&spades;")
-    print(cardstring)
     return cardstring
 
 def is_suited(combo):
