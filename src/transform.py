@@ -261,11 +261,8 @@ class Transformer:
                 # Enumerate flop-level questions
                 for j, question in enumerate(self.flop_questions):
                     q = "{}. **{}**".format(j + 1, question)
-                    q = textwrap.wrap(q, width=76)
-                    lines.append(q[0])
-                    for l in q[1:]:
-                        lines.append("   {}".format(l))
-                    lines.append("")
+                    lines.append("{}".format(q))
+                    lines.append("\n")
                 lines.append("#### Hands")
                 combos = scenario.hero.range.combos()
                 random.shuffle(combos)
@@ -276,10 +273,9 @@ class Transformer:
                     lines.append("{}. {} (Flop: {})".format(h+1, format_card_str(hand), suit_to_html(f)))
                     for j, question in enumerate(self.hand_questions):
                         q = "{}. **{}**".format(j + 1, question)
+                        lines.append("    {}".format(q))
+                        lines.append("\n")
                         q = textwrap.wrap(q, width=76)
-                        lines.append("    " + q[0])
-                        for l in q[1:]:
-                            lines.append("       {}".format(l))
         return '\n'.join(lines)
 
     def as_text(self):

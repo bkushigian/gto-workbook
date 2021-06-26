@@ -60,7 +60,8 @@
   <question>Should you bet this hand and expect worse hands to call?</question>
   <question>Does this hand benefit from a protection bet?</question>
   <question>Does this hand benefit from growing the pot?</question>
-  <question>How is this hand doing if you bet and get called? Are you still ahead of villain's range?</question>
+  <question>How is this hand doing if you bet and get called?</question>
+  <question>How is this hand doing against a check-raise?</question>
   <question>What are this hand's incentives on this flop?</question>
   <question>What turn cards are best or worst for this hand?</question>
 </hand-questions>
