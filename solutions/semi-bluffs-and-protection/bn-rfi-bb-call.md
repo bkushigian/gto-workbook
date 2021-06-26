@@ -38,11 +38,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
    I prefer a small cbet with 100% frequency.
 #### Hands
 1. <b>J<span style="color:#008800;">&clubs;</span>T<span style="color:#ff0000;">&hearts;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
        No.
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
        Yes. BB should be calling with ands like T6s-T8s, some low pocket pairs,
        some 5x, and some drawing hands.
@@ -93,85 +93,150 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>K<span style="color:#000000;">&spades;</span>7<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
+        Yes, a few. BB might fold some like K8s or K9o. We probably won't fold
+        out any pairs, and since villain doesn't really have many non-made hands
+        with more showdown value than this hand we probably won't get too many
+        better hands to fold.
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
+        BB might call with like 43s w/ a backdoor flush draw, but those have
+        plenty of equity against us...I wouldn't really call that hand worse.
 
     3. **Does this hand benefit from a protection bet?**
 
+       Yes. King high can win at showdown unimproved but most turn cards, especially
+       lower turn cards, can connect with villain's range in random ways. We won't
+       be putting much more money in the pot so folding out random suited
+       connectors and 1-gappers is to our benefit.
 
     4. **Does this hand benefit from growing the pot?**
 
+        Absolutely not! This hand wants to get to showdown for free.
 
     5. **How is this hand doing if you bet and get called?**
 
+        So-so. Villain should call with some worse unpaired hands that are drawing (like Kd4d).
+        We also have pretty good equity against a 5x, having two overs and some
+        a backdoor straight draw
 
     6. **How is this hand doing against a check-raise?**
 
+        Very bad. We fold.
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer?**
 
+        On its own this hand wants to check and get to showdown. In the context
+        of our range, however, we want to push equity by betting small.
 
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
+
+        Best cards for us are any K and any 7. The 7 improves us above their
+        bottom pair, and K improves us against their Tx and 5x. We are probably
+        also happy to see an A and maybe a T? 
+        
+        An A is good because it blocks top pair which we are unlikely to beat.
+        Similarly, a T is good because it blocks some of their middle pairs,
+        making our K-high relatively stronger. However, if they _do_ have a T
+        in their hand and we hit a K on the river we are in trouble.
+        
+        J and Q give us a gutter but also connect with some of their calling
+        hands.
+
+        We don't want to see a 5 since that connects with their range much more
+        than ours. Similarly we don't want to see lower cards like 2, 3, 4, 6,
+        or 7 since those connect with villains range more.
 
 
 3. <b>A<span style="color:#0088ff;">&diams;</span>T<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
+        No.
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
+        Yes. We are ahead of almost all of their range save for bottom set, and
+        they call a significant portion of the time. This is a great value bet.
 
     3. **Does this hand benefit from a protection bet?**
 
+        No. There are some random draws that might get there, but that will
+        happen pretty infrequently. Hands that have good equity against ours
+        won't fold to a bet.
 
     4. **Does this hand benefit from growing the pot?**
 
+        Yes. This hand wants to play for stacks.
 
     5. **How is this hand doing if you bet and get called?**
 
+        Very well.
 
     6. **How is this hand doing against a check-raise?**
 
+        Very well.
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer?**
 
+        This hand wants to bet, and it wants to bet a larger size.
 
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
+        Best cards are A and T. Worst card is probably a 5. We could also be
+        worried about some gutshots coming in (so like a K, or a 2,3,4) but I
+        don't think those are of much concern.
 
 4. <b>7<span style="color:#008800;">&clubs;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
+
+        Yes. Some cards with better high cards will fold out some showdown
+        equity against us. However, I don't know if those are 'better' hands...
+        Our hand doesn't win unimproved but it benefits from a lot of turns: it
+        has the option to polarize on any club as well as any 3, 4, 8, or 9, and gains
+        showdown on a 7 or a 6.
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
+        No.
 
     3. **Does this hand benefit from a protection bet?**
 
+        No. It has no showdown to protect
 
     4. **Does this hand benefit from growing the pot?**
 
+        Not unimproved. It likes a deeper SPR since it is drawing.
 
     5. **How is this hand doing if you bet and get called?**
 
+        Not particularly well, but we benefit from leverage and position, and this
+        hand can triple barrel on a lot of runouts.
 
     6. **How is this hand doing against a check-raise?**
 
+        This hand is a semi-bluff and does poorly against a check-raise.
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer?**
 
+        This hand wants to bet big. It is bottom of range and it wants to
+        polarize to get any fold equity it can. It also wants to be ready to put
+        stacks in depending on runout.
 
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
+        Best turn cards are 8c and 4c. Other than that:
+        + Any club (FD)
+        + Any 4 or 8 (OESD)
+        + A 7 or a 6
 
 5. <b>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#0088ff;">&diams;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -193,10 +258,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>5<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -217,11 +282,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
 
-7. <b>6<span style="color:#ff0000;">&hearts;</span>6<span style="color:#000000;">&spades;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+7. <b>6<span style="color:#ff0000;">&hearts;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -243,10 +308,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>A<span style="color:#008800;">&clubs;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -268,10 +333,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>9<span style="color:#008800;">&clubs;</span>8<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -293,10 +358,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>9<span style="color:#008800;">&clubs;</span>4<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -338,10 +403,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>Q<span style="color:#000000;">&spades;</span>J<span style="color:#ff0000;">&hearts;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -363,10 +428,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>T<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -388,10 +453,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>9<span style="color:#ff0000;">&hearts;</span>7<span style="color:#ff0000;">&hearts;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -413,10 +478,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>J<span style="color:#008800;">&clubs;</span>8<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -438,10 +503,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>Q<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -463,10 +528,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>A<span style="color:#008800;">&clubs;</span>J<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -488,10 +553,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>K<span style="color:#000000;">&spades;</span>Q<span style="color:#ff0000;">&hearts;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -513,10 +578,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>A<span style="color:#0088ff;">&diams;</span>9<span style="color:#000000;">&spades;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -538,10 +603,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>Q<span style="color:#000000;">&spades;</span>T<span style="color:#000000;">&spades;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -563,10 +628,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>Q<span style="color:#000000;">&spades;</span>9<span style="color:#000000;">&spades;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -608,10 +673,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>Q<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -633,10 +698,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>J<span style="color:#0088ff;">&diams;</span>8<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -658,10 +723,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>K<span style="color:#000000;">&spades;</span>9<span style="color:#000000;">&spades;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -683,10 +748,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>Q<span style="color:#008800;">&clubs;</span>3<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -708,10 +773,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -732,11 +797,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
 
-6. <b>4<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+6. <b>4<span style="color:#ff0000;">&hearts;</span>4<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -758,10 +823,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>J<span style="color:#008800;">&clubs;</span>7<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -783,10 +848,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>6<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -807,11 +872,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
 
-9. <b>9<span style="color:#0088ff;">&diams;</span>9<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+9. <b>9<span style="color:#ff0000;">&hearts;</span>9<span style="color:#0088ff;">&diams;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -833,10 +898,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>Q<span style="color:#0088ff;">&diams;</span>T<span style="color:#000000;">&spades;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -878,10 +943,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>8<span style="color:#0088ff;">&diams;</span>5<span style="color:#0088ff;">&diams;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -903,10 +968,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>T<span style="color:#008800;">&clubs;</span>5<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -928,10 +993,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>A<span style="color:#0088ff;">&diams;</span>2<span style="color:#ff0000;">&hearts;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -953,10 +1018,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>A<span style="color:#0088ff;">&diams;</span>7<span style="color:#0088ff;">&diams;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -978,10 +1043,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>8<span style="color:#000000;">&spades;</span>7<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1003,10 +1068,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#0088ff;">&diams;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1028,10 +1093,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>T<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1053,10 +1118,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>A<span style="color:#0088ff;">&diams;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1078,10 +1143,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>A<span style="color:#000000;">&spades;</span>9<span style="color:#000000;">&spades;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1103,10 +1168,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>A<span style="color:#000000;">&spades;</span>K<span style="color:#0088ff;">&diams;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span>4<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1148,10 +1213,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>T<span style="color:#000000;">&spades;</span>8<span style="color:#000000;">&spades;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1173,10 +1238,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>8<span style="color:#008800;">&clubs;</span>3<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1198,10 +1263,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>A<span style="color:#0088ff;">&diams;</span>T<span style="color:#0088ff;">&diams;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1223,10 +1288,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1247,11 +1312,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
 
-5. <b>4<span style="color:#ff0000;">&hearts;</span>4<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+5. <b>4<span style="color:#ff0000;">&hearts;</span>4<span style="color:#0088ff;">&diams;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1273,10 +1338,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>4<span style="color:#000000;">&spades;</span>3<span style="color:#000000;">&spades;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1298,10 +1363,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>Q<span style="color:#ff0000;">&hearts;</span>T<span style="color:#ff0000;">&hearts;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1323,10 +1388,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>T<span style="color:#008800;">&clubs;</span>9<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1348,10 +1413,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>Q<span style="color:#ff0000;">&hearts;</span>4<span style="color:#ff0000;">&hearts;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1373,10 +1438,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>K<span style="color:#ff0000;">&hearts;</span>2<span style="color:#ff0000;">&hearts;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1418,10 +1483,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>T<span style="color:#008800;">&clubs;</span>7<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1443,10 +1508,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>T<span style="color:#008800;">&clubs;</span>2<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1468,10 +1533,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>A<span style="color:#000000;">&spades;</span>8<span style="color:#ff0000;">&hearts;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1493,10 +1558,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>K<span style="color:#ff0000;">&hearts;</span>Q<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1518,10 +1583,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>Q<span style="color:#ff0000;">&hearts;</span>J<span style="color:#ff0000;">&hearts;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1543,10 +1608,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>Q<span style="color:#000000;">&spades;</span>9<span style="color:#008800;">&clubs;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1568,10 +1633,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>Q<span style="color:#000000;">&spades;</span>5<span style="color:#000000;">&spades;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1593,10 +1658,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>Q<span style="color:#ff0000;">&hearts;</span>T<span style="color:#000000;">&spades;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1618,10 +1683,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>7<span style="color:#ff0000;">&hearts;</span>6<span style="color:#ff0000;">&hearts;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1643,10 +1708,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>A<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span></b> (Flop: K<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1688,10 +1753,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>A<span style="color:#008800;">&clubs;</span>2<span style="color:#ff0000;">&hearts;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1713,10 +1778,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>7<span style="color:#008800;">&clubs;</span>5<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1737,11 +1802,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
 
-3. <b>7<span style="color:#000000;">&spades;</span>7<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+3. <b>7<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1763,10 +1828,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>8<span style="color:#008800;">&clubs;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1788,10 +1853,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>8<span style="color:#ff0000;">&hearts;</span>7<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1813,10 +1878,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>Q<span style="color:#ff0000;">&hearts;</span>T<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1838,10 +1903,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>A<span style="color:#000000;">&spades;</span>J<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1863,10 +1928,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>Q<span style="color:#008800;">&clubs;</span>5<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1888,10 +1953,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>K<span style="color:#000000;">&spades;</span>5<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1913,10 +1978,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>5<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1958,10 +2023,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>J<span style="color:#0088ff;">&diams;</span>7<span style="color:#0088ff;">&diams;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -1983,10 +2048,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>T<span style="color:#000000;">&spades;</span>T<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2008,10 +2073,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>K<span style="color:#ff0000;">&hearts;</span>7<span style="color:#0088ff;">&diams;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2033,10 +2098,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>A<span style="color:#0088ff;">&diams;</span>T<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2058,10 +2123,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2083,10 +2148,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>A<span style="color:#ff0000;">&hearts;</span>5<span style="color:#ff0000;">&hearts;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2108,10 +2173,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>T<span style="color:#008800;">&clubs;</span>3<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2133,10 +2198,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>J<span style="color:#ff0000;">&hearts;</span>5<span style="color:#ff0000;">&hearts;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2158,10 +2223,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>K<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2183,10 +2248,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>4<span style="color:#008800;">&clubs;</span>3<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2228,10 +2293,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>8<span style="color:#ff0000;">&hearts;</span>6<span style="color:#ff0000;">&hearts;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2253,10 +2318,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>8<span style="color:#ff0000;">&hearts;</span>3<span style="color:#ff0000;">&hearts;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2278,10 +2343,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>A<span style="color:#0088ff;">&diams;</span>9<span style="color:#ff0000;">&hearts;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2302,11 +2367,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
 
-4. <b>9<span style="color:#ff0000;">&hearts;</span>9<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+4. <b>9<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2328,10 +2393,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>A<span style="color:#008800;">&clubs;</span>Q<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2353,10 +2418,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>T<span style="color:#000000;">&spades;</span>3<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2378,10 +2443,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>A<span style="color:#008800;">&clubs;</span>J<span style="color:#008800;">&clubs;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2403,10 +2468,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>J<span style="color:#000000;">&spades;</span>8<span style="color:#000000;">&spades;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2428,10 +2493,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>Q<span style="color:#008800;">&clubs;</span>J<span style="color:#0088ff;">&diams;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2453,10 +2518,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>7<span style="color:#ff0000;">&hearts;</span>3<span style="color:#ff0000;">&hearts;</span></b> (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2498,10 +2563,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>A<span style="color:#0088ff;">&diams;</span>T<span style="color:#0088ff;">&diams;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2523,10 +2588,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>T<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2548,10 +2613,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>7<span style="color:#008800;">&clubs;</span>6<span style="color:#0088ff;">&diams;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2573,10 +2638,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>Q<span style="color:#008800;">&clubs;</span>5<span style="color:#008800;">&clubs;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2598,10 +2663,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>9<span style="color:#000000;">&spades;</span>5<span style="color:#000000;">&spades;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2623,10 +2688,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>J<span style="color:#008800;">&clubs;</span>8<span style="color:#008800;">&clubs;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2648,10 +2713,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2673,10 +2738,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>7<span style="color:#008800;">&clubs;</span>3<span style="color:#008800;">&clubs;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2698,10 +2763,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>6<span style="color:#008800;">&clubs;</span>3<span style="color:#008800;">&clubs;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2723,10 +2788,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>9<span style="color:#000000;">&spades;</span>8<span style="color:#000000;">&spades;</span></b> (Flop: J<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2768,10 +2833,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>8<span style="color:#008800;">&clubs;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2793,10 +2858,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>A<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2818,10 +2883,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>T<span style="color:#008800;">&clubs;</span>4<span style="color:#008800;">&clubs;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2843,10 +2908,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>A<span style="color:#ff0000;">&hearts;</span>T<span style="color:#ff0000;">&hearts;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2868,10 +2933,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>5<span style="color:#000000;">&spades;</span>5<span style="color:#008800;">&clubs;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2893,10 +2958,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>K<span style="color:#008800;">&clubs;</span>9<span style="color:#008800;">&clubs;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2918,10 +2983,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>A<span style="color:#000000;">&spades;</span>9<span style="color:#000000;">&spades;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2943,10 +3008,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>T<span style="color:#ff0000;">&hearts;</span>9<span style="color:#ff0000;">&hearts;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2968,10 +3033,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>A<span style="color:#000000;">&spades;</span>K<span style="color:#000000;">&spades;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -2993,10 +3058,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>7<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3038,10 +3103,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>T<span style="color:#ff0000;">&hearts;</span>9<span style="color:#ff0000;">&hearts;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3063,10 +3128,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>8<span style="color:#ff0000;">&hearts;</span>7<span style="color:#000000;">&spades;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3088,10 +3153,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>Q<span style="color:#008800;">&clubs;</span>T<span style="color:#008800;">&clubs;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3113,10 +3178,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>4<span style="color:#0088ff;">&diams;</span>2<span style="color:#0088ff;">&diams;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3138,10 +3203,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>A<span style="color:#008800;">&clubs;</span>Q<span style="color:#ff0000;">&hearts;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3163,10 +3228,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>J<span style="color:#ff0000;">&hearts;</span>5<span style="color:#ff0000;">&hearts;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3187,11 +3252,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
 
-7. <b>8<span style="color:#ff0000;">&hearts;</span>8<span style="color:#0088ff;">&diams;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+7. <b>8<span style="color:#000000;">&spades;</span>8<span style="color:#008800;">&clubs;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3213,10 +3278,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>T<span style="color:#ff0000;">&hearts;</span>7<span style="color:#ff0000;">&hearts;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3238,10 +3303,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>T<span style="color:#008800;">&clubs;</span>5<span style="color:#008800;">&clubs;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3263,10 +3328,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>A<span style="color:#008800;">&clubs;</span>T<span style="color:#008800;">&clubs;</span></b> (Flop: T<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3308,10 +3373,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>J<span style="color:#ff0000;">&hearts;</span>9<span style="color:#ff0000;">&hearts;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3333,10 +3398,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>T<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3358,10 +3423,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>T<span style="color:#008800;">&clubs;</span>8<span style="color:#000000;">&spades;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3383,10 +3448,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>7<span style="color:#000000;">&spades;</span>5<span style="color:#000000;">&spades;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3408,10 +3473,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>4<span style="color:#ff0000;">&hearts;</span>3<span style="color:#ff0000;">&hearts;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3433,10 +3498,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>6<span style="color:#008800;">&clubs;</span>4<span style="color:#008800;">&clubs;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3458,10 +3523,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>A<span style="color:#000000;">&spades;</span>3<span style="color:#000000;">&spades;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3483,10 +3548,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>9<span style="color:#ff0000;">&hearts;</span>6<span style="color:#ff0000;">&hearts;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3508,10 +3573,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>A<span style="color:#008800;">&clubs;</span>Q<span style="color:#008800;">&clubs;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3533,10 +3598,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>J<span style="color:#0088ff;">&diams;</span>8<span style="color:#0088ff;">&diams;</span></b> (Flop: 9<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span>3<span style="color:#008800;">&clubs;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3578,10 +3643,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>6<span style="color:#008800;">&clubs;</span>4<span style="color:#008800;">&clubs;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3603,10 +3668,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>A<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3628,10 +3693,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>3<span style="color:#000000;">&spades;</span>2<span style="color:#000000;">&spades;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3653,10 +3718,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>K<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3678,10 +3743,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>9<span style="color:#008800;">&clubs;</span>5<span style="color:#008800;">&clubs;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3703,10 +3768,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>Q<span style="color:#0088ff;">&diams;</span>8<span style="color:#0088ff;">&diams;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3728,10 +3793,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 7. <b>6<span style="color:#ff0000;">&hearts;</span>2<span style="color:#ff0000;">&hearts;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3752,11 +3817,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
 
-8. <b>9<span style="color:#0088ff;">&diams;</span>9<span style="color:#008800;">&clubs;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+8. <b>9<span style="color:#ff0000;">&hearts;</span>9<span style="color:#0088ff;">&diams;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3778,10 +3843,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>Q<span style="color:#000000;">&spades;</span>J<span style="color:#000000;">&spades;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3803,10 +3868,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>Q<span style="color:#008800;">&clubs;</span>8<span style="color:#ff0000;">&hearts;</span></b> (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3848,10 +3913,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 #### Hands
 1. <b>6<span style="color:#ff0000;">&hearts;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3873,10 +3938,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 2. <b>A<span style="color:#0088ff;">&diams;</span>8<span style="color:#0088ff;">&diams;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3898,10 +3963,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 3. <b>Q<span style="color:#ff0000;">&hearts;</span>8<span style="color:#008800;">&clubs;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3923,10 +3988,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 4. <b>K<span style="color:#000000;">&spades;</span>J<span style="color:#0088ff;">&diams;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3948,10 +4013,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 5. <b>K<span style="color:#ff0000;">&hearts;</span>J<span style="color:#ff0000;">&hearts;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3973,10 +4038,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 6. <b>A<span style="color:#008800;">&clubs;</span>T<span style="color:#008800;">&clubs;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -3997,11 +4062,11 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
 
-7. <b>3<span style="color:#000000;">&spades;</span>3<span style="color:#008800;">&clubs;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+7. <b>3<span style="color:#ff0000;">&hearts;</span>3<span style="color:#008800;">&clubs;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -4023,10 +4088,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 8. <b>K<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -4048,10 +4113,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 9. <b>7<span style="color:#008800;">&clubs;</span>3<span style="color:#008800;">&clubs;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
@@ -4073,10 +4138,10 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 
 10. <b>J<span style="color:#ff0000;">&hearts;</span>5<span style="color:#ff0000;">&hearts;</span></b> (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
-    1. **If you you bet this hand should you expect better hands to fold?**
+    1. **If you bet this hand should you expect better hands to fold?**
 
 
-    2. **If you you bet this hand should you expect worse hands to call?**
+    2. **If you bet this hand should you expect worse hands to call?**
 
 
     3. **Does this hand benefit from a protection bet?**
