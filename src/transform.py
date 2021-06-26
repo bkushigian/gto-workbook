@@ -343,7 +343,7 @@ def main():
     if len(argv) == 4:
         output_file = argv[3]
     else:
-        output_file = osp.splitext(file)[0] + "-questions." + file_format_extensions[format]
+        output_file = osp.splitext(file)[0] + "." + file_format_extensions[format]
 
     random.seed(SEED)
     t = Transformer(file)
