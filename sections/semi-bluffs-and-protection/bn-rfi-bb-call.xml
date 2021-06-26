@@ -56,10 +56,12 @@
   </question>
 </flop-questions>
 <hand-questions>
-  <question>Should this hand bet and expect better hands to fold?</question>
-  <question>Should this hand bet and expect worse hands to call?</question>
-  <question>Can this hand expect to benefit from fold equity?</question>
+  <question>Should you bet this hand and expect better hands to fold?</question>
+  <question>Should you bet this hand and expect worse hands to call?</question>
+  <question>Does this hand benefit from a protection bet?</question>
+  <question>Does this hand benefit from growing the pot?</question>
+  <question>How is this hand doing if you bet and get called? Are you still ahead of villain's range?</question>
   <question>What are this hand's incentives on this flop?</question>
-  <question>What turn cards are most likely to change this hand's incentives?</question>
+  <question>What turn cards are best or worst for this hand?</question>
 </hand-questions>
 </document>
