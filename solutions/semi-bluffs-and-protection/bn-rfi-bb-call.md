@@ -333,45 +333,60 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
         We do not want to see any overcard, especially a K.
 
-        **Note:** Interesting, so looking at the solver any non-spade T and any
-        A are very bad for us (EV around 0.1) and a non-spade K is the next
-        worse (EV around 0.18).
+        + **Note:** Interesting, so looking at the solver any non-spade T and
+          any A are very bad for us (EV around 0.1) and a non-spade K is the
+          next worse (EV around 0.18).
         
-        I'll try to reason through why I think this is. If villain has a T or A
-        in hand we will not be able to get any folds from them. If they _don't_
-        have an A or a T and an A comes on the turn, does this make them call
-        more with middle pair? It's blocking a lot of our top pair, so we might
-        actually see fewer folds from Tx and we lose a lot of fold equity, which
-        is reflected in a lower EV.
+          I'll try to reason through why I think this is. If villain has a T or
+          A in hand we will not be able to get any folds from them. If they
+          _don't_ have an A or a T and an A comes on the turn, does this make
+          them call more with middle pair? It's blocking a lot of our top pair,
+          so we might actually see fewer folds from Tx and we lose a lot of
+          fold equity, which is reflected in a lower EV.
 
-        This same reasoning might apply to a lot of lower pocket pairs as well.
-
-        Looking back at the solver it looks like villain's calling range is 22%
-        top pair and 29% middle pair. This means that on an A 16% of villain's
-        range is trips (but 30% of our range is trips, so our range is protected).
-        Likewise, on a T turn 21% of villains range vs 9% of our range is trips.
-
-        So I think to summarize, the main problem with the paired board is that
-        this uncaps villain's range which takes away a lot of our leverage.
+          This same reasoning might apply to a lot of lower pocket pairs as
+          well.
+          
+          Looking back at the solver it looks like villain's calling range is
+          22% top pair and 29% middle pair. This means that on an A 16% of
+          villain's range is trips (but 30% of our range is trips, so our range
+          is protected).  Likewise, on a T turn 21% of villains range vs 9% of
+          our range is trips.
+          
+          So I think to summarize, the main problem with the paired board is
+          that this uncaps villain's range which takes away a lot of our
+          leverage.
 
 7. <b>6<span style="color:#ff0000;">&hearts;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
     1. **If you bet this hand should you expect better hands to fold?**
 
+        No.
 
     2. **If you bet this hand should you expect worse hands to call?**
 
+        Some 5x, 22-44, and some draws should call.
 
     3. **Does this hand benefit from a protection bet?**
+
+        Yes, there are a lot of hands like K7, K8, etc that should be folding to
+        a bet.
 
 
     4. **Does this hand benefit from growing the pot?**
 
+        No, this hand wants to play smaller pots with wider ranges.
 
     5. **How is this hand doing if you bet and get called?**
 
+        Okay but not great. We can expect villain to have middle pair or better
+        maybe 50% of the time.
 
     6. **How is this hand doing against a check-raise?**
 
+        Poorly, and it should fold.
+
+        + **Note:** I checked the solver and all pocket pairs should call a 1/2
+        pot bet.
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer?**
 
@@ -381,9 +396,12 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 
 8. <b>A<span style="color:#008800;">&clubs;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
     1. **If you bet this hand should you expect better hands to fold?**
-
+    
+    No.
 
     2. **If you bet this hand should you expect worse hands to call?**
+
+    Yes.
 
 
     3. **Does this hand benefit from a protection bet?**
