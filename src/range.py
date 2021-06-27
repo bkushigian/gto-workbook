@@ -135,7 +135,6 @@ class Range:
     def hands(self, deadcards=None):
         if deadcards is None:
             deadcards = set()
-        combos = self.combos()
         hands = []
         for c in self.combos():
             hands += expand_combo(c, deadcards)
@@ -167,6 +166,107 @@ class Range:
                     self.weights_to_combos.setdefault(weight, []).append(combo)
                 self.combos_to_weights[combo] = weight
 
+    def range_rows(self):
+        rows = []
+
+        for i,c1 in enumerate("AKQJT98765432"):
+            row = []
+            rows.append(row)
+            for j,c2 in enumerate("AKQJT98765432"):
+                suitedness_class = "suited"
+                if i > j:
+                    combo = f"{c2}{c1}o"
+                    suitedness_class = "offsuit"
+                elif i == j:
+                    combo = f"{c1}{c2}"
+                    suitedness_class = "pair"
+                else:
+                    combo = f"{c1}{c2}s"
+                weight = int(self[combo])
+                row.append((combo, weight, suitedness_class))
+        return rows
+
+    html_range_id_num = 1
+
+    def as_html_table(self,
+                      range_id=None,
+                      width="40px",
+                      height="40px",
+                      text_align="center",
+                      vertical_align="middle",
+                      # pair_rgb="aaff9f",
+                      pair_rgb="0072ef",
+                      # suited_rgb="e37fd7",
+                      suited_rgb="ee0000",
+                      # offsuit_rgb="bbced3",
+                      offsuit_rgb="ffff22",
+                      max_color_weight=100,
+                      min_color_weight=60):
+
+        def weighted_color_str(weight, color_str):
+            def weight_color(color):
+                multiplier = (min_color_weight + (weight / 100) * (max_color_weight - min_color_weight)) / 100.0
+                return int(color * multiplier)
+
+            rgb = color_str[:2], color_str[2:4], color_str[4:6]
+            rgb = [int(c, base=16) for c in rgb]
+            rgb  = ['{0:0{1}x}'.format(weight_color(c), 2) for c in rgb]
+            return "".join(rgb)
+
+        def wb_contrast(rgb):
+            rgb = rgb[:2], rgb[2:4], rgb[4:6]
+            
+            brightness = ( int(rgb[0], base=16) * 299
+                         + int(rgb[1], base=16) * 587
+                         + int(rgb[2], base=16) * 114) / 1000
+
+            return '111' if (brightness > 125)  else 'eee'
+            
+        class_to_colors = {'pair': pair_rgb, 'suited': suited_rgb, 'offsuit': offsuit_rgb}
+
+        if range_id is None:
+            range_id = "styled_range_{}".format(self.html_range_id_num)
+            self.html_range_id_num += 1
+        elements = []
+        elements.append(
+            f"""<style>
+            .range {{
+                border: 3px solid black;
+                width: auto;
+            }}
+            #{range_id} td {{
+                width: {width};
+                height: {height};
+                text-align: {text_align};
+                vertical-align: {vertical_align};
+            }}
+            #{range_id} td.pair {{
+                background: #{pair_rgb};
+                border: 1px solid black;
+            }}
+            #{range_id} td.offsuit {{
+                background: #{offsuit_rgb};
+                border: 1px solid black;
+            }}
+            #{range_id} td.suited {{
+                background: #{suited_rgb};
+                border: 1px solid black;
+            }}
+            </style>""")
+        elements.append(f"<table id=\"{range_id}\" class=\"range\">")
+        for row in self.range_rows():
+            elements.append("<tr>")
+            for combo, weight, clss in row:
+                color = class_to_colors[clss]
+                color = weighted_color_str(weight, color)
+                foreground = wb_contrast(color)
+                elements.append(f"<td class=\"{clss}\" style=\"background:#{color}; color:#{foreground}\">{combo}<br><small>{weight}</small></td>".format(clss, weight))
+            elements.append("</tr>")
+
+
+        elements.append("</table>")
+        return ''.join(elements)
+
     def __getitem__(self, combo):
         enforce_combo_format(combo)
         return self.combos_to_weights.get(combo) or 0.0
@@ -176,3 +276,8 @@ class Range:
 
     def __repr__(self):
         return str(self)
+
+if __name__ == "__main__":
+    import sys
+    with open(sys.argv[1], "w") as f:
+        f.write("<!doctype html>" + Range("AA-22,AKs-A2s,KQs-K2s,QJs-Q5s,JTs-J6s,T9s-T6s,98s-96s,87s-85s,76s-75s,65s-64s,54s,43s,AKo-A6o,KQo-K8o,QJo-Q9o,JTo-J9o,T9o,98o,[50.0000]Q4s-Q2s,J5s-J2s,T5s-T2s,95s-92s,84s-82s,74s-72s,63s-62s,53s-52s,42s,32s,A5o-A2o,K7o,Q8o,J8o,T8o,97o,87o,76o[/50.0000]").as_html_table())

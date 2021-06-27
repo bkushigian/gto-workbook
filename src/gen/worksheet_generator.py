@@ -110,6 +110,9 @@ class WorksheetGenerator:
 
     def section_break(self):
         return "\n\n"
+
+    def add_raw_content(self, content):
+        self._lines.append(content)
     
     def __str__(self):
         lines = []
@@ -148,4 +151,8 @@ class MarkdownWorksheetGenerator(WorksheetGenerator):
     def add_hand_question(self, question):
         super().add_hand_question("    {}. **{}**".format(self.next_hand_question_num(), question))
 
+    def add_range_subsection(self):
+        self.add_raw_content("### Player Ranges")
 
+    def add_player_range(self, title, range_table):
+        self._lines.append(f"\n#### {title}\n\n{range_table}\n\n")

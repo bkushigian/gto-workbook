@@ -25,6 +25,7 @@ class Player:
         self.table_position = elem.attrib['pos']
         self.has_position = bool(elem.attrib['ip'])
         self.range = Range(elem.find('range').text.strip())
+        self.range_title = elem.attrib['title']
     
     def __str__(self):
         return "Player[{}({})|range='{}']".format(
@@ -75,6 +76,13 @@ class QuestionGenerationDocument:
         g.add_section(self.title)
         for scenario in self.scenarios:
             g.add_scenario_subsection(scenario.title, scenario.description)    
+            if isinstance(g, MarkdownWorksheetGenerator):
+                g.add_range_subsection()
+                g.add_player_range(title="Hero's {} Range".format(scenario.hero.range_title),
+                                   range_table=scenario.hero.range.as_html_table())
+                g.add_player_range(title="Villain's {} Range".format(scenario.villain.range_title),
+                                   range_table=scenario.villain.range.as_html_table())
+
 
             for f in self.flops:
                 flop_list = [f[i:i+2] for i in range(0, len(f), 2)]
