@@ -1,6 +1,7 @@
 import random
 from gen.document import QuestionGenerationDocument
 import os.path as osp
+from os import makedirs
 import sys
 sys.path.append(osp.join(osp.dirname(__file__), "lib"))
 
@@ -24,8 +25,14 @@ def main():
     else:
         output_file = osp.splitext(file)[0] + "." + FILE_FORMAT_EXTENSIONS[format]
 
+    output_dir = osp.dirname(output_file)
+    try:
+        makedirs(osp.join(output_dir, "img"))
+    except OSError as e:
+        pass
+
     random.seed(SEED)
-    t = QuestionGenerationDocument(file)
+    t = QuestionGenerationDocument(file, output_dir=output_dir)
 
     print("writing to", output_file)
 

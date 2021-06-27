@@ -188,6 +188,24 @@ class Range:
 
     html_range_id_num = 1
 
+    def as_image(self,
+                 output_file="range.jpg",
+                 range_id=None,
+                 width="40px",
+                 height="40px",
+                 pair_rgb="0072ef",
+                 suited_rgb="cc0000",
+                 offsuit_rgb="ffff22",
+                 max_color_weight=100,
+                 min_color_weight=30):
+        import imgkit
+        html = "<!doctype html>" 
+        html += self.as_html_table(range_id=range_id, width=width, height=height, pair_rgb=pair_rgb, suited_rgb=suited_rgb,
+                                   offsuit_rgb=offsuit_rgb, max_color_weight=max_color_weight, min_color_weight=min_color_weight)
+        print(output_file)
+        imgkit.from_string(html, output_file)
+
+
     def as_html_table(self,
                       range_id=None,
                       width="40px",
@@ -201,7 +219,7 @@ class Range:
                       # offsuit_rgb="bbced3",
                       offsuit_rgb="ffff22",
                       max_color_weight=100,
-                      min_color_weight=60):
+                      min_color_weight=30):
 
         def weighted_color_str(weight, color_str):
             def weight_color(color):
@@ -279,5 +297,6 @@ class Range:
 
 if __name__ == "__main__":
     import sys
-    with open(sys.argv[1], "w") as f:
-        f.write("<!doctype html>" + Range("AA-22,AKs-A2s,KQs-K2s,QJs-Q5s,JTs-J6s,T9s-T6s,98s-96s,87s-85s,76s-75s,65s-64s,54s,43s,AKo-A6o,KQo-K8o,QJo-Q9o,JTo-J9o,T9o,98o,[50.0000]Q4s-Q2s,J5s-J2s,T5s-T2s,95s-92s,84s-82s,74s-72s,63s-62s,53s-52s,42s,32s,A5o-A2o,K7o,Q8o,J8o,T8o,97o,87o,76o[/50.0000]").as_html_table())
+    import imgkit
+    html = "<!doctype html>" + Range("AA-22,AKs-A2s,KQs-K2s,QJs-Q5s,JTs-J6s,T9s-T6s,98s-96s,87s-85s,76s-75s,65s-64s,54s,43s,AKo-A6o,KQo-K8o,QJo-Q9o,JTo-J9o,T9o,98o,[50.0000]Q4s-Q2s,J5s-J2s,T5s-T2s,95s-92s,84s-82s,74s-72s,63s-62s,53s-52s,42s,32s,A5o-A2o,K7o,Q8o,J8o,T8o,97o,87o,76o[/50.0000]").as_html_table()
+    imgkit.from_string(html, sys.argv[1])

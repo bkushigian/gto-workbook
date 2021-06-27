@@ -6,6 +6,8 @@ document.py: represent a question generation document.
 
 import xml.etree.ElementTree as ET
 import random
+import os.path as osp
+from os import makedirs
 from range import Range, expand_combo
 from gen.worksheet_generator import MarkdownWorksheetGenerator, WorksheetGenerator
 
@@ -48,9 +50,10 @@ class Scenario:
 
 
 class QuestionGenerationDocument:
-    def __init__(self, xml_file):
+    def __init__(self, xml_file, output_dir):
         # todo
         self.xml_file = xml_file
+        self.output_dir = output_dir
         root = ET.parse(xml_file).getroot()
         self.root = root
         self.title = root.find("title").text
@@ -73,15 +76,21 @@ class QuestionGenerationDocument:
         return self.generate_document(WorksheetGenerator())
 
     def generate_document(self, g: WorksheetGenerator):
+        img_dir = osp.join(self.output_dir, "img")
         g.add_section(self.title)
         for scenario in self.scenarios:
             g.add_scenario_subsection(scenario.title, scenario.description)    
             if isinstance(g, MarkdownWorksheetGenerator):
                 g.add_range_subsection()
+                hero_range_title = f"{scenario.name}-hero-range.jpg"
+                villain_range_title = f"{scenario.name}-villain-range.jpg"
+                scenario.hero.range.as_image(output_file=f"{img_dir}/{hero_range_title}")
+                scenario.villain.range.as_image(output_file=f"{img_dir}/{villain_range_title}")
                 g.add_player_range(title="Hero's {} Range".format(scenario.hero.range_title),
-                                   range_table=scenario.hero.range.as_html_table())
+                                   range_table="![Hero's Range]({})".format(f"img/{hero_range_title}"))
+
                 g.add_player_range(title="Villain's {} Range".format(scenario.villain.range_title),
-                                   range_table=scenario.villain.range.as_html_table())
+                                   range_table="![Villain's Range]({})".format(f"img/{villain_range_title}"))
 
 
             for f in self.flops:
