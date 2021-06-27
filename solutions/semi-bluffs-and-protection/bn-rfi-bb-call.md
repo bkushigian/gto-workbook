@@ -235,52 +235,124 @@ the flop with $9.70 behind and a pot of $0.65, and BB checks to you.
 5. <b>3<span style="color:#0088ff;">&diams;</span>2<span style="color:#0088ff;">&diams;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
     1. **If you bet this hand should you expect better hands to fold?**
 
+        Yes. This is bottom of range.
 
     2. **If you bet this hand should you expect worse hands to call?**
+
+        No. This is bottom of range.
 
 
     3. **Does this hand benefit from a protection bet?**
 
+        No, there isn't any showdown equity to protect.
 
     4. **Does this hand benefit from growing the pot?**
 
+        Not unimproved. This is a natural bluff since it is a drawing hand with
+        no showdown value. That means this hand wants to apply leverage to get
+        fold equity, and a high SPR is necessary for this to work.
 
     5. **How is this hand doing if you bet and get called?**
 
+        This hand prefers a fold but has plenty of equity, has position, a high
+        SPR, and two more streets to apply leverage.
 
     6. **How is this hand doing against a check-raise?**
 
+        Not well, we should fold.
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer?**
 
+        This hand wants to polarize and bet larger. It should apply leverage to
+        maximizd fold equity and get the chips in on favorable turns and
+        rivers.
 
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
+        If we bet large and villain calls we are happiest by hitting a 4x, and
+        da 4d is best (for the redraw). We are also very happy to see any
+        diamond. I'm not sure a 2 or a 3 helps us that much. We pick up some
+        showdown value, but if villain called a larger bet then they are very
+        likely still ahead of us (on a 2 some of their draws got there, though
+        I'm not sure they are calling a bigger bet with 43s). Anyway, I think
+        even if we _do_ hit a 2 or a 3 we continue to barrel and treat our hand
+        like a bluff.
+
+        I don't know if there are any turn cards that are particularly bad for
+        us. A king is probably not great since we don't have the nuts when a 4
+        comes (their QJ gets there). But yeah, I'm not sure if there are any
+        cards that are really bad for us.
+
+        **Note:** After looking at the solver it looks like the worst cards for
+        our EV is any non-diamond board pairing card, especially when a
+        backdoor flush draw comes in (this makes sense since villain may
+        polarize by check/raising, putting us in a rough spot).
 
 6. <b>5<span style="color:#000000;">&spades;</span>4<span style="color:#000000;">&spades;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
     1. **If you bet this hand should you expect better hands to fold?**
 
+        No.
 
     2. **If you bet this hand should you expect worse hands to call?**
 
+        Some unpaired hands with draws should call.
 
     3. **Does this hand benefit from a protection bet?**
 
+        Yes. Folding out Kx, Qx, Jx and backdoor draws should maintain some of our equity.
 
     4. **Does this hand benefit from growing the pot?**
 
+        Not really. This hand has enough showdown that it wants to get to the
+        river cheap.
 
     5. **How is this hand doing if you bet and get called?**
 
+        Not great, but we do have some equity against better pairs, and we beat
+        some drawing hands unimproved
 
     6. **How is this hand doing against a check-raise?**
 
+        Not well. This hand should probably fold to a x/r.
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer?**
 
+        On its own this hand's incentive is to see showdown for as cheap as
+        possible. This suggests a check. However, given our range's equity and
+        nut advantage, this hand should bet small to push equity. Even when
+        called we can still expect to win some portion of the time unimproved,
+        and we can also polarize on later streets if we hit a five a spade, a 2
+        or a 3.
+
+        Given everything above, this hand's preferred action is to bet small.
 
     8. **Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
+        If we bet small and villain calls, we are most happy if we see a 5 or a 4.
+        We also like to see a spade, and to a lesser degree a 2 or a 3.
+
+        We do not want to see any overcard, especially a K.
+
+        **Note:** Interesting, so looking at the solver any non-spade T and any
+        A are very bad for us (EV around 0.1) and a non-spade K is the next
+        worse (EV around 0.18).
+        
+        I'll try to reason through why I think this is. If villain has a T or A
+        in hand we will not be able to get any folds from them. If they _don't_
+        have an A or a T and an A comes on the turn, does this make them call
+        more with middle pair? It's blocking a lot of our top pair, so we might
+        actually see fewer folds from Tx and we lose a lot of fold equity, which
+        is reflected in a lower EV.
+
+        This same reasoning might apply to a lot of lower pocket pairs as well.
+
+        Looking back at the solver it looks like villain's calling range is 22%
+        top pair and 29% middle pair. This means that on an A 16% of villain's
+        range is trips (but 30% of our range is trips, so our range is protected).
+        Likewise, on a T turn 21% of villains range vs 9% of our range is trips.
+
+        So I think to summarize, the main problem with the paired board is that
+        this uncaps villain's range which takes away a lot of our leverage.
 
 7. <b>6<span style="color:#ff0000;">&hearts;</span>6<span style="color:#008800;">&clubs;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
     1. **If you bet this hand should you expect better hands to fold?**
