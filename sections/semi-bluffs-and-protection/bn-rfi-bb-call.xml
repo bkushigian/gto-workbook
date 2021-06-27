@@ -1,18 +1,30 @@
 <?xml version="1.0"?>
 <document>
+<title>Semi-Bluffs and Protection</title>
 <scenarios>
-  <scenario name="bn-rfi-bb-call">
+  <scenario name="bn-rfi-bb-call-bn-hero">
     <title>BB Calls BN Open</title>
     <description>Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and action folds to you. You open for $0.30 (3bb), SB folds, and BB calls. You go to the flop with $9.70 behind and a pot of $0.65, and BB checks to you. </description>
     <config sb="0.05" bb="0.10" pot="0.65" effective-stack="9.70">
-      <hero pos="bn" ip="true" action="rfi">
+      <hero pos="bn" ip="true" action="rfi" title="Button Opening Range">
         <range>AA-22,AKs-A2s,KQs-K2s,QJs-Q5s,JTs-J6s,T9s-T6s,98s-96s,87s-85s,76s-75s,65s-64s,54s,43s,AKo-A6o,KQo-K8o,QJo-Q9o,JTo-J9o,T9o,98o,[50.0000]Q4s-Q2s,J5s-J2s,T5s-T2s,95s-92s,84s-82s,74s-72s,63s-62s,53s-52s,42s,32s,A5o-A2o,K7o,Q8o,J8o,T8o,97o,87o,76o[/50.0000]</range>
       </hero>
-      <villain pos="bb" ip="false" action="call">
+      <villain pos="bb" ip="false" action="call" title="Big Blind Calling Range vs Button">
         <range>77-22,A7s-A6s,A3s-A2s,K8s-K2s,Q8s-Q2s,J8s-J4s,T8s-T6s,98s-96s,87s-85s,76s-75s,65s-64s,54s-53s,43s,A9o-A7o,A5o,KTo-K9o,QJo-QTo,JTo-J9o,T9o</range>
       </villain>
     </config>
-
+  </scenario>
+  <scenario name="lj-rfi-bb-call-bb-hero">
+    <title>BB Calls LJ Open</title>
+    <description>Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and action folds to you. You open for $0.30 (3bb), SB folds, and BB calls. You go to the flop with $9.70 behind and a pot of $0.65, and BB checks to you. </description>
+    <config sb="0.05" bb="0.10" pot="0.65" effective-stack="9.70">
+      <hero pos="lj" ip="true" action="rfi" title="Hijack Opening Range">
+        <range>AA-77,AKs-A9s,A5s,KQs-KTs,QJs-QTs,JTs,T9s,AKo-AQo,[50.0000]66-44,A8s-A6s,A4s-A2s,K9s-K8s,Q9s,J9s,T8s,98s-97s,87s,76s,65s,AJo-ATo,KQo-KJo[/50.0000]</range>
+      </hero>
+      <villain pos="bb" ip="false" action="call" title="Big Bling Calling Range vs Hijack">
+        <range>JJ-22,A9s-A2s,K9s-K5s,Q9s-Q8s,J9s-J8s,T9s-T7s,98s-97s,87s-86s,76s-75s,65s-64s,54s-53s,43s,AJo-ATo,KQo-KJo</range>
+      </villain>
+    </config>
   </scenario>
 </scenarios>
 
@@ -56,13 +68,13 @@
   </question>
 </flop-questions>
 <hand-questions>
-  <question>If you bet this hand should you expect better hands to fold?</question>
-  <question>If you bet this hand should you expect worse hands to call?</question>
-  <question>Does this hand benefit from a protection bet?</question>
-  <question>Does this hand benefit from growing the pot?</question>
-  <question>How is this hand doing if you bet and get called?</question>
+  <question>If you bet this hand should you expect better hands to fold? If so, which hands?</question>
+  <question>If you bet this hand should you expect worse hands to call? If so, which hands?</question>
+  <question>Does this hand benefit from a protection bet? Explain.</question>
+  <question>Does this hand benefit from growing the pot? How so?</question>
+  <question>How is this hand doing if you bet and get called? What parts of villain's range are you ahead of? Behind?</question>
   <question>How is this hand doing against a check-raise?</question>
-  <question>What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer?</question>
-  <question>Suppose you take your preferred action (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?</question>
+  <question>What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer? Do these incentives line up with the strategy you proposed for your range above?</question>
+  <question>Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?</question>
 </hand-questions>
 </document>
