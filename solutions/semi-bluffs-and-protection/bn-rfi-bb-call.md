@@ -17,8 +17,6 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
 ### Flop 1: <b>A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span></b>
 
-### Flop 1: <b>A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span></b>
-
 1. **Approximate each player's equity. Who has the equity advantage?**
 
    The button has a significant equity advantage on this flop, probably about 55%.
@@ -399,7 +397,10 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
         Poorly, and it should fold.
 
         + **Note:** I checked the solver and all pocket pairs should call a 1/2
-        pot bet.
+          pot bet. However, this is very close to break even (GTO+ marks it's EV
+          at $0.06 in a $1.61 pot) so it's certainly not a very profitable call.
+
+          I'm a little curious how this hand should play on later streets.
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer?**
 
