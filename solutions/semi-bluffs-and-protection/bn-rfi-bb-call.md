@@ -1,3 +1,4 @@
+
 # Section 1: Semi-Bluffs and Protection
 
 ## Scenario 1: BB Calls BN Open
@@ -1021,7 +1022,12 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
+        + **Best Turn Cards:** Easy: any spade. Also, a queen (pref non-diamond). A 7
+          is okay, and we have enough showdown value to beat about half of their range.
+          A non-spade 5 or 6 gives us a combo draw.
 
+        + **Worst turn cards:** We don't want to see the board pair, becase that means
+          we aren't drawing to the nuts anymore, and also villains range uncaps.
 
 6. <b>A<span style="color:#008800;">&clubs;</span>J<span style="color:#008800;">&clubs;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
 
