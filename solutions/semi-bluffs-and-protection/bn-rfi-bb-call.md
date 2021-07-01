@@ -994,7 +994,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
         It wants a high spr and it wants to apply leverage over multiple
         streets...to get a high spr it wants to play a smaller pot to begin
-        with
+        with.
 
     5. **How is this hand doing if you bet and get called? What parts of villain's range are you ahead of? Behind?**
 
@@ -1003,6 +1003,10 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
         can continue to barrel and have a good bluffing candidate on the
         river.
 
+        + **From the solver:** When flop checks to us this hand has EV of 0.54.
+          We bet at about 75% frequency, and when we get called we have an EV
+          of 0.68, a 1.4 bb improvement.
+
     6. **How is this hand doing against a check-raise?**
 
         Not great. We still have a very strong draw, but by x/r-ing us villain
@@ -1010,6 +1014,17 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
         aggression should be easy for them to handle...we want to give them
         tough decisions, but a polar range has relatively easy decisions facing
         a bet. This makes our hand kinda tough to play.
+
+        + **From the solver:** Wrong. We still have 0.72 EV...I was not
+          expecting this. I suppose this is a strong enough draw that we
+          can continue to play aggressively.
+
+          After we get x/r'd the solver uses the following turn strategy:
+
+          - Fold any A or 8 turn (afraid of 44), and folds 33% of the time on a
+            4 turn (afraid of 44, but only one combo now).
+
+          - On any other turn we call.
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer? Do these incentives line up with the strategy you proposed for your range above?**
 
@@ -1022,30 +1037,88 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-        + **Best Turn Cards:** Easy: any spade. Also, a queen (pref non-diamond). A 7
-          is okay, and we have enough showdown value to beat about half of their range.
-          A non-spade 5 or 6 gives us a combo draw.
+        + **Best Turn Cards:** Easy: any spade. Also, a queen (pref
+          non-diamond). A 7 is okay, and we have enough showdown value to beat
+          about half of their range.  A non-spade 5 or 6 gives us a combo draw.
 
-        + **Worst turn cards:** We don't want to see the board pair, becase that means
-          we aren't drawing to the nuts anymore, and also villains range uncaps.
+        + **Worst turn cards:** We don't want to see the board pair, becase that
+          means we aren't drawing to the nuts anymore, and also villains range
+          uncaps.
+        
+        + **From the Solver:** 
+          + Re: "Any Spade": A little more care is needed. K&spades; is _the_
+            best card for us...we have nut flush. After that a non-8 spade is
+            good. With 8&spades; turn we are up against some boats.
 
 6. <b>A<span style="color:#008800;">&clubs;</span>J<span style="color:#008800;">&clubs;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
+        No.
+
     2. **If you bet this hand should you expect worse hands to call? If so, which hands?**
+
+        Yes. Worst Ax, 8x, 4x, some draws and backdoor draws.
 
     3. **Does this hand benefit from a protection bet? Explain.**
 
+        This hand wouldn't mind folding out some backdoor draws, but hands
+        with good equity like spade draws won't be folding.
+
     4. **Does this hand benefit from growing the pot? How so?**
 
+        This hand could potentially play for stacks depending on runouts and
+        action.  It loses to 44, A8o, and maybe 88 or A4s (not in present range
+        but could be in some players bb call ranges). It wants to bet to grow
+        the pot since it should be ahead a lot of the time at showdown. It gets
+        value from hands like worse Ax, 8x, 4x, and some draws.
+
+    
     5. **How is this hand doing if you bet and get called? What parts of villain's range are you ahead of? Behind?**
+
+        We expect to be doing very well. We are ahead of most of their calling
+        range. We are behind only 44 (4 combos) and A8 (5 combos), and we tie
+        some strong draws (6&spades;5&spades;, 7&spades;6&spades;), but I don't
+        expect those to call; since they benefit from fonds _and_ from growing
+        the pot I think they should be betting?
+
+        + **From the solver:** A&clubs;J&clubs; has EV=0.6 on flop prior to
+          cbetting. After villain calls we have EV=0.98. This is a hand that
+          wants to get calls.
 
     6. **How is this hand doing against a check-raise?**
 
+        We are doing fine. We lose some EV, but not much. We have a lot of turn
+        cards that we don't want to see, but on blank runouts I think we can
+        play for stacks. However we will be in a bluff-catching role. By
+        x/r villain has polarized, and I think they do this with draws and with
+        nutty hands (2p+)
+
+        + **From the solver:** A&clubs;J&clubs; has EV=0.6 on flop prior to
+          cbetting. After villain x/r and we call hero has EV=0.73. So we
+          prefer a call.
+
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer? Do these incentives line up with the strategy you proposed for your range above?**
 
+        This hand wants to bet to grow a decent sized pot to win at showdown.
+        This hand could either belong to top of a small-cbet range or bottom
+        of a large-cbet range. Since this range wants to bet smaller our
+        default action with this hand is small.
+
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
+
+        + **Best Turn Cards:** Any non-spade J and either A is great to see.
+          I'm not sure if seeing a K or a Q is good...on the one hand we can
+          get paid from some random Kx and Qx that hit second pair, but on
+          the other hand we need to be careful of K8 and K4. I guess since
+          this somewhat uncaps villain's range we don't want to see it,
+          especially since we have enough aces that they aren't likely to put
+          in a bunch with 2nd pair.
+        
+        + **Worst Turn Cards:** Any spade will cut down our EV by uncapping
+          villain's range. We don't want to see an 8 or a 4, and we do need
+          to be careful about any card below an 8 since they can complete a
+          gutshot.
 
 7. <b>K<span style="color:#000000;">&spades;</span>Q<span style="color:#ff0000;">&hearts;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
 
