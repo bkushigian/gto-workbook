@@ -137,7 +137,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-7. <b>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
+7. <b>6<span style="color:#ff0000;">&hearts;</span>6<span style="color:#000000;">&spades;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
@@ -507,7 +507,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-6. <b>4<span style="color:#000000;">&spades;</span>4<span style="color:#0088ff;">&diams;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
+6. <b>4<span style="color:#ff0000;">&hearts;</span>4<span style="color:#000000;">&spades;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
@@ -561,7 +561,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-9. <b>9<span style="color:#ff0000;">&hearts;</span>9<span style="color:#0088ff;">&diams;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
+9. <b>9<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>7<span style="color:#000000;">&spades;</span>2<span style="color:#0088ff;">&diams;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
@@ -877,7 +877,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-5. <b>4<span style="color:#ff0000;">&hearts;</span>4<span style="color:#0088ff;">&diams;</span></b>    (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
+5. <b>4<span style="color:#000000;">&spades;</span>4<span style="color:#008800;">&clubs;</span></b>    (Flop: K<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>7<span style="color:#008800;">&clubs;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
@@ -1229,7 +1229,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-3. <b>7<span style="color:#000000;">&spades;</span>7<span style="color:#008800;">&clubs;</span></b>    (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
+3. <b>7<span style="color:#000000;">&spades;</span>7<span style="color:#0088ff;">&diams;</span></b>    (Flop: Q<span style="color:#000000;">&spades;</span>Q<span style="color:#0088ff;">&diams;</span>J<span style="color:#008800;">&clubs;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
@@ -1405,7 +1405,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-2. <b>T<span style="color:#ff0000;">&hearts;</span>T<span style="color:#008800;">&clubs;</span></b>    (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
+2. <b>T<span style="color:#000000;">&spades;</span>T<span style="color:#008800;">&clubs;</span></b>    (Flop: Q<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>7<span style="color:#000000;">&spades;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
@@ -1635,7 +1635,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-4. <b>9<span style="color:#0088ff;">&diams;</span>9<span style="color:#008800;">&clubs;</span></b>    (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
+4. <b>9<span style="color:#ff0000;">&hearts;</span>9<span style="color:#008800;">&clubs;</span></b>    (Flop: Q<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>6<span style="color:#000000;">&spades;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
@@ -2041,7 +2041,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-5. <b>5<span style="color:#000000;">&spades;</span>5<span style="color:#008800;">&clubs;</span></b>    (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
+5. <b>5<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span></b>    (Flop: T<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span>6<span style="color:#0088ff;">&diams;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
@@ -2677,7 +2677,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-8. <b>9<span style="color:#ff0000;">&hearts;</span>9<span style="color:#0088ff;">&diams;</span></b>    (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
+8. <b>9<span style="color:#000000;">&spades;</span>9<span style="color:#0088ff;">&diams;</span></b>    (Flop: 8<span style="color:#000000;">&spades;</span>5<span style="color:#0088ff;">&diams;</span>3<span style="color:#0088ff;">&diams;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
@@ -2853,7 +2853,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
 
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
 
-7. <b>3<span style="color:#000000;">&spades;</span>3<span style="color:#008800;">&clubs;</span></b>    (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
+7. <b>3<span style="color:#000000;">&spades;</span>3<span style="color:#0088ff;">&diams;</span></b>    (Flop: 7<span style="color:#000000;">&spades;</span>6<span style="color:#000000;">&spades;</span>6<span style="color:#0088ff;">&diams;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
