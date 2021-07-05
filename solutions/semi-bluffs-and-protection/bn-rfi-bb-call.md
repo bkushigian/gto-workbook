@@ -1120,59 +1120,282 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
           to be careful about any card below an 8 since they can complete a
           gutshot.
 
+        + **From The Solver:**
+
+          + **Best Turn Cards:** either non-spade J, either A. After that, any
+          non-spade T, K&hearts;/&clubs;, Q&hearts;/&clubs;
+
+          + **Worst Turn Cards:** 5&spades; is the worst card in the deck.
+            This uncaps villain's range w/ flushes, straights, 2pair, etc.
+
+            8&spades; is 2nd worse since it brings in flushes and makes middle
+            pair trips. Any other spade is also bad (J&spades; less so), but
+            lower spades are worse.
+
+            We don't like to see 5, 6, or 7 since these make straights/2pairs
+            possible.
+
+            We prefer a non-diamond since villain might bet polar with a
+            FD.
+
 7. <b>K<span style="color:#000000;">&spades;</span>Q<span style="color:#ff0000;">&hearts;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
+        No
+
     2. **If you bet this hand should you expect worse hands to call? If so, which hands?**
+
+        No
 
     3. **Does this hand benefit from a protection bet? Explain.**
 
+        We are unpaired and might have a bit of showdown, so getting random
+        other holdings to fold out is good for us, even if we have them beat.
+        However we don't gain much from protection because there are no overs.
+
     4. **Does this hand benefit from growing the pot? How so?**
+
+        Not really, this hand is happy getting to showdown cheap.
 
     5. **How is this hand doing if you bet and get called? What parts of villain's range are you ahead of? Behind?**
 
+        We aren't ahead of much. We are live against their middle pairs, but we
+        are drawing very thing against their Ax.
+        
+        Flopzilla says we have about 30% equity
+
     6. **How is this hand doing against a check-raise?**
+
+        Poor, we fold.
+
+        + **From the solver:** Nope, we actually call here. I should note, we
+          are only betting KQo w/ a club, and then only at a frequency of
+          around 35%, and we are only calling  K&spades;Qx and folding
+          KxQ&spades;.
+
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer? Do these incentives line up with the strategy you proposed for your range above?**
 
+        This hand doesn't really want to put any money in on its own. It might
+        benefit from fold equity, but I don't think it's ever folding a pair,
+        and so it's only folding out hands it's ahead of. Again, there is some
+        amount of equity there (against like QJ, which we definitely don't want
+        to fold out since we have it dominated) or JT, but I don't know if it's
+        enough to bet.
+
+        I'm also a little spoiled because I think I saw that this hand doesn't
+        bet this flop (which doesn't surprise me) in the solver output
+        previously.
+
+        On the other hand, we do have the back door nut flush draw, so if there
+        is a combo of KQo that wants  to bet its this one (or better,
+        K&spades;Q&diams;). So I could see this particular combo betting small
+        50% of the time or something. But we want some back door nut flush draws
+        in our checking range too, and this hand already has incentives to
+        check, so I think this is a good checking hand as well.
+
+        So default action: check.
+
+        **Follow Up:** Reading back over this, I'm wondering: why does this
+        hand like to check more than, say, another no-pair backdoor straight
+        draw flush draw? I'm not sure, but my hypothesis is two fold:
+        1. We want a checking range, and as such we want nutty back door
+           draws in that range
+        2. These combos benefit the least from protection. We can still hit
+           a K or Q and make a good amount of showdown equity, and when
+           a backdoor flush or straight comes we know we are at the top end of it.
+           For instance, when TJ comes, we have nut straight, whereas hands like
+           K9 or 97 will have the bottom end, and therefore have some reverse
+           implied odds working against them.
+
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
+
+        + **Best Turn Cards:** Best turn cards: We pick up the most equity w/ a
+          K or a Q.
+
+          We are also very happy to see either J&spades; or T&spades;. We can start
+          betting aggressively. Since we have a very strong combo draw we don't need
+          to bet as big as, say, a J&hearts;, since we hit the nuts on a _lot_
+          of rivers. So, if I had to pick a sizing, I'd probably go like 0.75 pot
+          to full pot here, with the intention of barrelling a lot of rivers
+          where we either hit the nuts or have a blank turn that doesn't pick
+          up any equity.
+
+        + **Worst turn cards:** We don't want the board pairing, especially the
+          8 or the 4. We'd also prefer to not see a diamond.
+
+        + **From the solver:**
+
+            + **Best Turn Cards:** Q&spades; is the best turn card. After that
+              we have a slight preference for Qx over Kx. I think this might be
+              because villain's Qx range is slightly stronger than their Kx
+              range and is more willing to call bets, but this is just a guess.
+
+              We also pick up some EV from a spade, especially the J&spades; or
+              T&spades; which give us nutty combo draws.
+
+            + **Worst Turn Cards:**  While it's true we don't want to see the
+              board pair, the solver is acutally more concerned with other low
+              cards that complete straights. I think this is for two reasons.
+              First, we lose a lot of equity from random pairs. Second, these
+              cards uncap villain's range, especially when there is no flush.
 
 8. <b>A<span style="color:#0088ff;">&diams;</span>9<span style="color:#000000;">&spades;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
+        No
+
     2. **If you bet this hand should you expect worse hands to call? If so, which hands?**
+
+        Yes, worse pairs, some draws.
 
     3. **Does this hand benefit from a protection bet? Explain.**
 
+        No
+
     4. **Does this hand benefit from growing the pot? How so?**
+
+        Somewhat. This hand doesn't want to play for stacks on most runouts,
+        but it has top pair with a back door flush draw, so it's not as afraid
+        of spade runouts and can play larger pots a bit more comfortably.
+        Against this particular BB range, it is never outkicked.
 
     5. **How is this hand doing if you bet and get called? What parts of villain's range are you ahead of? Behind?**
 
+        This hand is doing fine. This hand is ahead of all pairs, all drawing hands. It is behind sets and 2 pairs (A8, A4).
+
     6. **How is this hand doing against a check-raise?**
+
+        This hand will lose a fair amount of EV but it is still a clear call.
+        However, instead of being the best hand most often BB's range should be
+        relatively polarized around us. If they x/r small they can have some
+        top pair that we are beating, but if they x/r large I think they should
+        not be doing this with Ax (except maybe for some backdoor flush draws?)
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer? Do these incentives line up with the strategy you proposed for your range above?**
 
+        This hand wants to bet for value. It is ahead of most of villain's
+        calling range. I'd say that on blank runouts it's looking for two
+        streets of value.
+
+        Our preferred action is to bet small, along with the rest of our range.
+
+        Also of note: we have a backdoor flush draw, and having the spade in
+        our hand makes us a little more robust to aggression. We also have
+        the A&diams; which takes away some of villain's bluffs on diamond turns.
+
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
+        
+        + **Best Turn Cards:** We are happy to see a 9 since we now beat 2pair.
+          An A is also good, but this makes any of BB's sets into boats and also
+          sets us up for some coolers, so I think that BB can bet more
+          aggressively in these spots...I think it will be a marginal
+          difference, but I'm hypothesizing that the solver prefers a 9 turn to
+          an A turn. I think this is also because BB will have some random 9x
+          that connects, so we are more likely to make money off of one of
+          their turned pairs.
+
+        + **Worst Turn Cards:** Whoops, peeked at  the solver. Anyway, we don't
+          really get much EV from any other card. We aren't drawing to any
+          straights, and we aren't drawing to a good flush. On a
+          &spades;&spades; runout we probably can't call a shove, or if we do
+          we are probably just barely +EV/indifferent (and in practice at the
+          stakes I play, I think this is a pure fold). A spade turn uncaps their
+          range, and while we prefer to have a spade here, we can't use it to
+          polarize.
+
+          Any lower cards also uncap villain's range because of straights and
+          random turned sets.
+
+        + **From The Solver:**
+          + **Best Turn Cards:** Yeah, 9s are good for us (pref non-diamond),
+            and A is good as well (not as high EV as a 9). We also like to see
+            a T. I'm guessing this is because we can target their middle pairs.
+          + **Worst Turn Cards:** First, we have a lot of EV no matter what turn
+            comes. 5&spades; and 8&spades;, the worst turns in the deck for us,
+            both have EV=$0.77 in a pot of $1.07, so about 3/4 pot.
+          
+            With that said, we do not want to see a spade, especially a low
+            spade, and we don't want to see a 5, a 7, or an 8. These uncap
+            villain's range and that should allow them to bet polarized in some
+            places.
+            
+            Interestingly, if we bet a 4 and get raised we fold most of the time
+            (always on 4&diams;). However, villain should be raising very rarely
+            (< 5%) so our range is protected here.
+
 
 9. <b>Q<span style="color:#000000;">&spades;</span>T<span style="color:#000000;">&spades;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
 
     1. **If you bet this hand should you expect better hands to fold? If so, which hands?**
 
+        Maybe some Kx, but those aren't really better even though they have
+        showdown value over us, because if they're folding they don't have a
+        flush draw.
+
     2. **If you bet this hand should you expect worse hands to call? If so, which hands?**
+
+        Some worse draws. Also, some hands with a pair that are vulnerable to
+        aggression, especially out of position (say 6&diams;6&hearts;), while
+        they have more showdown value we can make them underrealize this
+        showdown equity.
 
     3. **Does this hand benefit from a protection bet? Explain.**
 
+        No.
+
     4. **Does this hand benefit from growing the pot? How so?**
+
+        On some runouts, but this hand is trying to get folds.
 
     5. **How is this hand doing if you bet and get called? What parts of villain's range are you ahead of? Behind?**
 
+        This hand is probably slightly EV when called.
+
     6. **How is this hand doing against a check-raise?**
+
+        Fine. We have a draw to the nuts, a backdoor to a straight, and some
+        live cards to make middle pair. Plus, we can polarize and bluff off
+        equity on many runouts.
 
     7. **What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer? Do these incentives line up with the strategy you proposed for your range above?**
 
+        This hand wants to bet. It is a semi-bluffing hand. It wants to apply leverage
+        for 3 full streets.
+
     8. **Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?**
+
+        + **Best turn cards:** K&spades;, followed by any other spade. After that,
+          any Q or 9, preferably not a diamond. Any TJ (agian, pref not a diamond)
+          gives us a strong combo draw.
+
+        + **Worst turn cards:** We would prefer not to see the board pair. An 8
+          promotes their middle pair to trips and their bottom sets to a boats,
+          and these will be hard to fold out, and in the case of a boat we are
+          not drawing to the nuts. Same with an A turn. A 4 shouldn't be quite
+          as bad because they will have 1 combo of quads but no combos of
+          boats, which are effectively just as nutty as each other against our
+          hand, so we've cut down their nutty combos that we're drawing dead
+          against to  1/3. A 5 is bad because it completes both a wheel straight
+          and the 4..8 straight, and low/mid cards in general make random pairs
+          and random straights, so villain picks up some middling equity and
+          also uncaps their range simultaneously, making it a bit tougher for
+          us to semibluff.
+
+          Cards like T, J, K shouldn't hurt us that much. They do make some
+          random pair and 2pair, but we can still put a lot of pressure on
+          those, and since they haven't been totally uncapped w/ straights, we
+          are a bit more comfortable applying pressure.
+        + **From The Solver:**
+          + **Best Turn Cards:** We are happiest to see a spade, followed by a 9
+            or a Q (in that order)
+          + **Worst Turn Cards:** 4, 8, A, 5, K, 6, 7, 2, 3, in that order, are
+            all pretty bad for us. I was right that we are somewhat protected
+            on T J, since we have a gutter, but a K is a lot worse for us than
+            I thought.
+          
 
 10. <b>Q<span style="color:#000000;">&spades;</span>9<span style="color:#000000;">&spades;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>8<span style="color:#0088ff;">&diams;</span>4<span style="color:#000000;">&spades;</span>)
 
