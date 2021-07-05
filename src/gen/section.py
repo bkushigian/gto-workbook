@@ -9,7 +9,7 @@ import random
 import os.path as osp
 from os import makedirs
 from range import Range, expand_combo
-from gen.worksheet_generator import MarkdownWorksheetGenerator, WorksheetGenerator
+from gen.worksheet_generator import MarkdownWorksheetGenerator, WorksheetGenerator, suit_to_html
 
 
 class Player:
@@ -35,62 +35,50 @@ class Player:
             "Hero" if self.is_hero else "Villain",
             self.range)
 
-class Scenario:
-    """
-    A scenario to ask questions about. This corresponds to a <scenario> elem in
-    the XML doc
-    """
-    def __init__(self, scenario_elem):
-        t = scenario_elem
-        self.name = t.attrib['name']
-        self.title = t.find('title').text.strip()
-        self.description = t.find('description').text.strip()
-        self.hero = Player(t.find('./config/hero'))
-        self.villain = Player(t.find('./config/villain'))
 
-
-class QuestionGenerationDocument:
-    def __init__(self, xml_file, output_dir):
-        # todo
+class Section:
+    def __init__(self, xml_file, out_dir, parent=None):
         self.xml_file = xml_file
-        self.output_dir = output_dir
+        self.out_dir = out_dir
+        self.parent = parent
         root = ET.parse(xml_file).getroot()
         self.root = root
-        self.title = root.find("title").text
+        self.title = root.find("title").text.strip()
+        print("Section: ", self.title)
+        print(f"    {xml_file}")
+        self.name = root.find('name').text.strip()
+        self.description = root.find('description').text.strip()
+        self.hero = Player(root.find('./config/hero'))
+        self.villain = Player(root.find('./config/villain'))
         self.flops = [f.text for f in root.find('flops')]
         self.flop_questions = [q.text.strip() for q in root.find('flop-questions')]
         self.hand_questions = [q.text.strip() for q in root.find('hand-questions')]
-        scenarios = root.find('scenarios')
-        assert scenarios is not None
-        scenarios = [Scenario(s) for s in scenarios.findall('scenario')]
         
-        self.scenarios = scenarios
+        print(f"    out_dir: {out_dir}")
 
     def __str__(self):
         return str(self.worksheet_gen)
 
     def as_markdown(self):
-        return self.generate_document(MarkdownWorksheetGenerator())
+        return self.generate_section(MarkdownWorksheetGenerator())
 
     def as_text(self):
-        return self.generate_document(WorksheetGenerator())
+        return self.generate_section(WorksheetGenerator())
 
-    def generate_document(self, g: WorksheetGenerator):
-        img_dir = osp.join(self.output_dir, "img")
-        g.add_section(self.title)
-        for scenario in self.scenarios:
-            g.add_scenario_subsection(scenario.title, scenario.description)    
-            if isinstance(g, MarkdownWorksheetGenerator):
-                g.add_range_subsection()
-                hero_range_title = f"{scenario.name}-hero-range.jpg"
-                villain_range_title = f"{scenario.name}-villain-range.jpg"
-                scenario.hero.range.as_image(output_file=f"{img_dir}/{hero_range_title}")
-                scenario.villain.range.as_image(output_file=f"{img_dir}/{villain_range_title}")
-                g.add_player_range(title="Hero's {} Range".format(scenario.hero.range_title),
-                                   range_table="![Hero's Range]({})".format(f"img/{hero_range_title}"))
+    def generate_section(self, g: WorksheetGenerator):
+        img_dir = osp.join(self.out_dir, "img")
+        g.add_section(self.title, self.description)
+        if isinstance(g, MarkdownWorksheetGenerator):
+            g.add_range_subsection()
+            hero_range_title = f"{self.name}-hero-range.jpg"
+            villain_range_title = f"{self.name}-villain-range.jpg"
+            self.hero.range.as_image(output_file=f"{img_dir}/{hero_range_title}")
+            self.villain.range.as_image(output_file=f"{img_dir}/{villain_range_title}")
+            g.add_player_range(title="Hero's {} Range".format(self.hero.range_title),
+                                range_table="![Hero's Range]({})".format(f"img/{hero_range_title}"))
 
-                g.add_player_range(title="Villain's {} Range".format(scenario.villain.range_title),
-                                   range_table="![Villain's Range]({})".format(f"img/{villain_range_title}"))
+            g.add_player_range(title="Villain's {} Range".format(self.villain.range_title),
+                                range_table="![Villain's Range]({})".format(f"img/{villain_range_title}"))
 
 
             for f in self.flops:
@@ -100,8 +88,8 @@ class QuestionGenerationDocument:
                 for question in self.flop_questions:
                     g.add_flop_question(question)
 
-                g.add_hands_subsection()
-                combos = scenario.hero.range.combos()
+                g.add_hands_subsection(f"Hands for flop {suit_to_html(f)}")
+                combos = self.hero.range.combos()
                 random.shuffle(combos)
                 for combo in  combos[:10]:
                     hands = expand_combo(combo, deadcards=flop_list)
