@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <section>
-  <title>BB Calls LJ Open</title>
-  <name>lj-rfi-bb-call-bb-hero</name>
-  <description>Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and action folds to you. You open for $0.30 (3bb), SB folds, and BB calls. You go to the flop with $9.70 behind and a pot of $0.65, and BB checks to you. </description>
-  <config sb="0.05" bb="0.10" pot="0.65" effective-stack="9.70">
-    <hero pos="lj" ip="true" action="rfi" title="Hijack Opening Range">
-      <range>AA-77,AKs-A9s,A5s,KQs-KTs,QJs-QTs,JTs,T9s,AKo-AQo,[50.0000]66-44,A8s-A6s,A4s-A2s,K9s-K8s,Q9s,J9s,T8s,98s-97s,87s,76s,65s,AJo-ATo,KQo-KJo[/50.0000]</range>
+  <title>Lojack opens, Bn 3Bets, and Lojack Calls</title>
+  <name>lj-rfi-bn-3bet-lj-call</name>
+  <description>Blinds are $0.05/$0.10. Effective stacks are $10.00. You're in the LJ and you open for $0.30 (3bb). Action folds to the BN who 3Bets you to $0.90, a 3x raise. SB and BB both fold, and action is back to you. You call from out of position and go to the flop with $9.10 behind and a pot of $1.95. Action is on you. </description>
+  <config sb="0.05" bb="0.10" pot="1.95" effective-stack="9.10">
+    <hero pos="lj" ip="false" action="call" title="Lojack OOP 3Bet Call Range">
+      <range>TT-88,AJs-ATs,A5s,KQs-KTs,JTs,[50.0000]JJ,AQo[/50.0000]</range>
     </hero>
-    <villain pos="bb" ip="false" action="call" title="Big Bling Calling Range vs Hijack">
-      <range>JJ-22,A9s-A2s,K9s-K5s,Q9s-Q8s,J9s-J8s,T9s-T7s,98s-97s,87s-86s,76s-75s,65s-64s,54s-53s,43s,AJo-ATo,KQo-KJo</range>
+    <villain pos="bn" ip="true" action="3bet" title="Button 3Bet Range vs Lojack Open">
+      <range>AA-99,AKs-ATs,A7s,A5s-A3s,KQs-KTs,QJs,65s,AKo-AQo,KQo</range>
     </villain>
   </config>
 
-<!-- flops are shared between each scenario-->
+  <!-- flops are shared between each scenario-->
   <flops>
     <flop>AsTd5c</flop>
     <flop>As8d4s</flop>
@@ -48,6 +48,21 @@
       On this flop do you prefer to bet small or large?  With what frequencies would you check and bet?
     </question>
     <question>
+      How often should you be cbetting? Checking?
+    </question>
+    <question>
+      What are some hands that prefer to check/fold?
+    </question>
+    <question>
+      What are some hands that prefer to check/call?
+    </question>
+    <question>
+      What are some hands that prefer to check/raise?
+    </question>
+    <question>
+      What are some hands that prefer to cbet?
+    </question>
+    <question>
       Say you adopt a strategy where you either bet with your preferred sizing or check. You choose to bet and villain calls. What are the best and worst turn cards for your range?
     </question>
   </flop-questions>
@@ -57,7 +72,7 @@
     <question>Does this hand benefit from a protection bet? Explain.</question>
     <question>Does this hand benefit from growing the pot? How so?</question>
     <question>How is this hand doing if you bet and get called? What parts of villain's range are you ahead of? Behind?</question>
-    <question>How is this hand doing against a check-raise?</question>
+    <question>How is this hand doing against a bet or raise when you check or bet respectively?</question>
     <question>What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer? Do these incentives line up with the strategy you proposed for your range above?</question>
     <question>Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?</question>
   </hand-questions>
