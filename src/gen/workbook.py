@@ -43,8 +43,10 @@ class Workbook:
         lines.append("## Table of Contents")
 
         for i, chapter in enumerate(self.chapters):
-            file_location = chapter.generate_chapter()
-            rel_location = osp.relpath(file_location, self.out_dir)
+            file_location = chapter.generate_chapter().replace('\\', '/')
+            print(file_location)
+            rel_location = osp.relpath(file_location, self.out_dir).replace('\\', '/')
+            print(rel_location)
             lines.append(f"### Chapter {i+1}: [{chapter.title}]({rel_location})")
         
         file_location = f"{self.out_dir}/gto-workbook.md"
