@@ -48,9 +48,6 @@
       On this flop do you prefer to bet small or large?  With what frequencies would you check and bet?
     </question>
     <question>
-      How often should you be cbetting? Checking?
-    </question>
-    <question>
       What are some hands that prefer to check/fold?
     </question>
     <question>
@@ -60,10 +57,13 @@
       What are some hands that prefer to check/raise?
     </question>
     <question>
-      What are some hands that prefer to cbet?
+      Do any hands ever donk? If so, which ones?
     </question>
     <question>
-      Say you adopt a strategy where you either bet with your preferred sizing or check. You choose to bet and villain calls. What are the best and worst turn cards for your range?
+      Suppose you check and villain checks behind. What are the best and worst turn cards for your range? Do any give you an equity advantage? A nuts advantage? Uncap your range?
+    </question>
+    <question>
+      Suppose you check, villain bets 1/3 pot, and you call. What are the best and worst turn cards for your range? Do any give you an equity advantage? A nuts advantage? Uncap your range?
     </question>
   </flop-questions>
   <hand-questions>
