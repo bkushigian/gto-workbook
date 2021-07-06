@@ -8,8 +8,8 @@ import xml.etree.ElementTree as ET
 import random
 import os.path as osp
 from os import makedirs
-from range import Range, expand_combo
-from gen.worksheet_generator import MarkdownWorksheetGenerator, WorksheetGenerator, suit_to_html
+from workbook.range import Range, expand_combo
+from workbook.gen.worksheet_generator import MarkdownWorksheetGenerator, WorksheetGenerator, suit_to_html
 
 
 class Player:

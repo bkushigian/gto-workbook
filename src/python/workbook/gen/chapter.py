@@ -1,8 +1,8 @@
 import xml.etree.ElementTree as ET
 import os.path as osp
 from os import makedirs
-from gen.section import Section
-from gen.worksheet_generator import MarkdownWorksheetGenerator
+from workbook.gen.section import Section
+from workbook.gen.worksheet_generator import MarkdownWorksheetGenerator
 
 
 class Chapter:

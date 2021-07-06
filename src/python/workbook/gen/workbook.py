@@ -8,7 +8,7 @@ import random
 import os.path as osp
 from os import makedirs
 from sys import argv, exit, stderr
-from gen.chapter import Chapter
+from workbook.gen.chapter import Chapter
 
 
 class Workbook:

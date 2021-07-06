@@ -1,11 +1,11 @@
 from sys import argv, exit, stderr
-from gen.chapter import Chapter
-from gen.section import Section
-from gen.workbook import Workbook
+from workbook.gen.chapter import Chapter
+from workbook.gen.section import Section
+from workbook.gen.workbook import Workbook
 
 
 def usage():
-    print("usage: debug.py TYPE ROOT OUT", file=stderr)
+    print("usage: main.py TYPE ROOT OUT", file=stderr)
     print("valid types:\n  (w)orkbook\n  (c)hapter\n  (s)ection", file=stderr)
     exit(1)
 

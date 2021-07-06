@@ -1,5 +1,5 @@
 import random
-from gen.section import Section
+from workbook.gen.section import Section
 import os.path as osp
 from os import makedirs
 import sys
