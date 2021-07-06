@@ -1,5 +1,5 @@
 import random
-from gen.document import QuestionGenerationDocument
+from workbook.gen.section import Section
 import os.path as osp
 from os import makedirs
 import sys
@@ -21,25 +21,25 @@ def main():
         raise RuntimeError("Unrecognized output format: " + format)
 
     if len(argv) == 4:
-        output_file = argv[3]
+        out_file = argv[3]
     else:
-        output_file = osp.splitext(file)[0] + "." + FILE_FORMAT_EXTENSIONS[format]
+        out_file = osp.splitext(file)[0] + "." + FILE_FORMAT_EXTENSIONS[format]
 
-    output_dir = osp.dirname(output_file)
+    out_dir = osp.dirname(out_file)
     try:
-        makedirs(osp.join(output_dir, "img"))
+        makedirs(osp.join(out_dir, "img"))
     except OSError as e:
         pass
 
     random.seed(SEED)
-    t = QuestionGenerationDocument(file, output_dir=output_dir)
+    t = Section(file, out_dir=out_dir)
 
-    print("writing to", output_file)
+    print("writing to", out_file)
 
     if format == 'text' or format == 'txt':
-        t.to_text_file(output_file)
+        t.to_text_file(out_file)
     elif format == 'md' or format == 'markdown':
-        t.to_markdown_file(output_file)
+        t.to_markdown_file(out_file)
     else:
         print("Unknown format: " + format)
         exit(1)

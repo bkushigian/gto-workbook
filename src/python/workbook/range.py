@@ -1,5 +1,5 @@
 import re
-import cards
+from workbook import cards
 
 def is_pair(combo):
     return len(combo) == 2 and combo[0] == combo[1]

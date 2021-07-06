@@ -25,7 +25,6 @@ class WorksheetGenerator:
         self._section_depth = 0
 
         self._section_num = 0
-        self._scenario_num = 0
         self._flop_num = 0
         self._flop_question_num = 0
         self._hand_num = 0
@@ -34,9 +33,6 @@ class WorksheetGenerator:
     
     def next_section_num(self):
         return self._section_num + 1
-
-    def next_scenario_num(self):
-        return self._scenario_num + 1
 
     def next_flop_num(self):
         return self._flop_num + 1
@@ -50,28 +46,20 @@ class WorksheetGenerator:
     def next_hand_question_num(self):
         return self._hand_question_num + 1
 
-    def add_section(self, title):
+    def add_section(self, title, description):
         assert title not in self._sections
         self._section_titles.append(title)
         self._lines = []
         self._lines.append(title)
+        self._lines.append(description)
         self._section_depth = 1
         self._sections[title] = self._lines
         self._section_num += 1
-        self._scenario_num = 0
-
-    def add_scenario_subsection(self, title, description):
-        if not self._section_num:
-            raise RuntimeError("You must add a section before you add a scenario: {}".format(title))
-        self._section_depth = 2
-        self._lines.append(title)
-        self._lines.append(description)
-        self._scenario_num += 1
         self._flop_num = 0
 
     def add_flop_subsection(self, flop):
-        if not self._scenario_num:
-            raise RuntimeError("Cannot add a flop without a containing scenario")
+        if not self._section_num:
+            raise RuntimeError("Cannot add a flop without a containing section")
         self._lines.append(flop)
         self._section_depth = 3
         self._flop_num += 1
@@ -127,13 +115,8 @@ class MarkdownWorksheetGenerator(WorksheetGenerator):
         super().__init__()
         self.current_flop = ""
 
-    def add_section(self, title):
-        super().add_section("# Section {}: {}\n".format(self.next_section_num(), title))
-
-    def add_scenario_subsection(self, title, description):
-        super().add_scenario_subsection(
-            "## Scenario {}: {}".format(self.next_scenario_num(), title),
-            "_{}_".format(description))
+    def add_section(self, title, description):
+        super().add_section("# Section {}: {}\n".format(self.next_section_num(), title), description)
 
     def add_flop_subsection(self, flop):
         self.current_flop = flop
@@ -143,7 +126,8 @@ class MarkdownWorksheetGenerator(WorksheetGenerator):
         super().add_flop_question("{}. **{}**".format(self.next_flop_question_num(), question))
 
     def add_hands_subsection(self, hands=None):
-        super().add_hands_subsection("#### Hands")
+        hands = hands or "Hands"
+        super().add_hands_subsection(f"#### {hands}")
 
     def add_hand(self, hand):
         super().add_hand("{}. <b>{}</b>    (Flop: {})".format(self.next_hand_num(), suit_to_html(hand), suit_to_html(self.current_flop)))
