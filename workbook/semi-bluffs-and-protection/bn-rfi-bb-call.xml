@@ -15,20 +15,20 @@
   <!-- flops are shared between each scenario-->
   <flops>
     <flop>AsTd5c</flop>
-    <flop>As8d4s</flop>
-    <flop>As7s2d</flop>
-    <flop>KsJd4d</flop>
-    <flop>Ks9d7c</flop>
+    <flop>Ts4s2s</flop>
+    <flop>7s6s6d</flop>
+    <flop>Qs8d6s</flop>
+    <flop>8s5d3d</flop>
     <flop>Ks5d2s</flop>
     <flop>QsQdJc</flop>
-    <flop>QsTd7s</flop>
-    <flop>Qs8d6s</flop>
     <flop>Js3d2c</flop>
+    <flop>QsTd7s</flop>
     <flop>Ts9d6d</flop>
-    <flop>Ts4s2s</flop>
+    <flop>As8d4s</flop>
+    <flop>KsJd4d</flop>
+    <flop>As7s2d</flop>
     <flop>9s4d3c</flop>
-    <flop>8s5d3d</flop>
-    <flop>7s6s6d</flop>
+    <flop>Ks9d7c</flop>
   </flops>
 
   <flop-questions>
