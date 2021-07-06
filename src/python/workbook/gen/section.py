@@ -11,7 +11,6 @@ from os import makedirs
 from workbook.range import Range, expand_combo
 from workbook.gen.worksheet_generator import MarkdownWorksheetGenerator, WorksheetGenerator, suit_to_html
 
-
 class Player:
     """
     Represent a player in the document, either "Hero" or "Villain".
@@ -79,6 +78,14 @@ class Section:
 
             for f in self.flops:
                 flop_list = [f[i:i+2] for i in range(0, len(f), 2)]
+
+                # We want to make hands for each flop deterministic.  To do this
+                # we hash the flop to produce a seed and use this seed to seed
+                # random. This is robust to perterbations in in flop ordering,
+                # number of flops, and number of hands per flop.
+
+                SEED = hash(f)
+                random.seed(SEED)
                 g.add_flop_subsection(f)
                 # Enumerate flop-level questions
                 for question in self.flop_questions:
