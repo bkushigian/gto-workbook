@@ -16,8 +16,6 @@ class Chapter:
 
         self.title = root.find("title").text
         section_names = [c.attrib["name"] for c in root.findall("section")]
-        print("Chapter title:", self.title)
-        print("  Sections:", section_names)
         self.sections = [Section(osp.join(root_dir, f"{name}.xml"), out_dir, self) for name in section_names]
     
     def generate_chapter(self):

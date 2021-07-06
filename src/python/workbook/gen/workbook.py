@@ -27,10 +27,8 @@ class Workbook:
             try:
                 self.chapters.append(Chapter(osp.join(root_dir, name), osp.join(out_dir, name), out_format))
             except FileNotFoundError:
-                print("Couldn't find chapter", osp.join(root_dir, name), file=stderr)
-                print("Continuing without this chapter")
-        
-        print(self.chapters)
+                print("[!] Couldn't find chapter", osp.join(root_dir, name), file=stderr)
+                print("    Continuing without this chapter", file=stderr)
 
     def generate_workbook(self):
         """
@@ -44,9 +42,7 @@ class Workbook:
 
         for i, chapter in enumerate(self.chapters):
             file_location = chapter.generate_chapter().replace('\\', '/')
-            print(file_location)
             rel_location = osp.relpath(file_location, self.out_dir).replace('\\', '/')
-            print(rel_location)
             lines.append(f"### Chapter {i+1}: [{chapter.title}]({rel_location})")
         
         file_location = f"{self.out_dir}/gto-workbook.md"

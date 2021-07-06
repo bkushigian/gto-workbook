@@ -44,8 +44,6 @@ class Section:
         root = ET.parse(xml_file).getroot()
         self.root = root
         self.title = root.find("title").text.strip()
-        print("Section: ", self.title)
-        print(f"    {xml_file}")
         self.name = root.find('name').text.strip()
         self.description = root.find('description').text.strip()
         self.hero = Player(root.find('./config/hero'))
@@ -54,8 +52,6 @@ class Section:
         self.flop_questions = [q.text.strip() for q in root.find('flop-questions')]
         self.hand_questions = [q.text.strip() for q in root.find('hand-questions')]
         
-        print(f"    out_dir: {out_dir}")
-
     def __str__(self):
         return str(self.worksheet_gen)
 

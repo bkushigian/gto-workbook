@@ -36,7 +36,7 @@
       Approximate each player's equity. Who has the equity advantage?
     </question>
     <question>
-      What are the weakest hands that could go all in on the flop? Go for three streets of value on blank turns?
+      What are the weakest hands in your range that could go all in on the flop? Go for three streets of value on blank turns?
     </question>
     <question>
       Which player has the nuts advantage?
@@ -67,13 +67,16 @@
     </question>
   </flop-questions>
   <hand-questions>
-    <question>If you bet this hand should you expect better hands to fold? If so, which hands?</question>
-    <question>If you bet this hand should you expect worse hands to call? If so, which hands?</question>
-    <question>Does this hand benefit from a protection bet? Explain.</question>
-    <question>Does this hand benefit from growing the pot? How so?</question>
-    <question>How is this hand doing if you bet and get called? What parts of villain's range are you ahead of? Behind?</question>
+    <question>Do you ever check/fold this hand?</question>
+    <question>Do you ever check/call this hand?</question>
+    <question>If you check/raise this hand should you expect better hands to fold? If so, which hands?</question>
+    <question>If you check/raise this hand should you expect worse hands to call? If so, which hands?</question>
+    <question>Does this hand ever donk bet 1/2 pot?</question>
+    <question>Does this hand benefit from protection bet?</question>
+    <question>Does this hand benefit from growing the pot?</question>
+    <question>How is this hand doing if you check/raise and get called? What parts of villain's range are you ahead of? Behind?</question>
     <question>How is this hand doing against a bet or raise when you check or bet respectively?</question>
-    <question>What are this hand's incentives on this flop? Does it want to bet or check? If it wants to bet, what sizing does it prefer? Do these incentives line up with the strategy you proposed for your range above?</question>
-    <question>Suppose you take your preferred action from the last question (check or bet the preferred size). If this is a bet, suppose villain calls. What are the best and worst turn cards for this hand?</question>
+    <question>Suppose you check the flop and villain checks behind. What are the best and worst turn cards for this hand?</question>
+    <question>Suppose you check the flop, villain bets 1/3 pot, and and you call behind. What are the best and worst turn cards for this hand?</question>
   </hand-questions>
 </section>
