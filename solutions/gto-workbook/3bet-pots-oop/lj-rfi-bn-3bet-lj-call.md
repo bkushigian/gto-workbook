@@ -79,7 +79,36 @@ Blinds are $0.05/$0.10. Effective stacks are $10.00. You're in the LJ and you op
 
 10. **Suppose you check and villain checks behind. What are the best and worst turn cards for your range? Do any give you an equity advantage? A nuts advantage? Uncap your range?**
 
+    I think maybe a J? We are checking a lot of KQ, KJ, JT. We also
+    have 88, which BN doesn't, so seeing an 8 might give us bottom
+    set, but I don't think that this is enough to benefit us too too much.
+
+    If they are checkign at all they are probably checking some weaker Ax or
+    KT, made hands that don't want to grow the pot. Therefore random low cards
+    (7, 5, 4, 3) that connect with their suited aces, as well as K, might be
+    bad for our range. They are checking KK and QQ sometimes as well, I assume,
+    so any K or Q is probably bad for our range.
+
+    No cards give us an equity or nuts advantage.
+
+    A J uncaps our range somewhat by allowing straights, some 2p, and some sets.
+
 11. **Suppose you check, villain bets 1/3 pot, and you call. What are the best and worst turn cards for your range? Do any give you an equity advantage? A nuts advantage? Uncap your range?**
+
+    If we call we probably have some showdown value, but we might be calling
+    with some stronger draws (so in our case, we might be checking back with
+    like K&spades;Q&spades; or K&diams;J&diams;, etc). I think we prefer to
+    x/r these, but we should be mixing x/c (maybe even 50/50), and maybe even
+    some x/f.
+    
+    Anyway, a Q or a J that brings in the back door flush draw would be very
+    nice because this will allow us to be nutty AND to have some natural bluffs.
+
+    WRT showdown value, I think we x/c with most of our Ax and Tx, so an A or
+    T should at least serve to uncap our range. villain still has the literal
+    nuts (AA) when an A comes and TT when a T comes, but combos are cut down
+    significantly.
+
 
 #### Hands for flop A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>
 1. <b>A<span style="color:#ff0000;">&hearts;</span>Q<span style="color:#000000;">&spades;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
