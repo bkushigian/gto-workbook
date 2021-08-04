@@ -61,6 +61,14 @@ class Section:
         return self.generate_section(WorksheetGenerator())
 
     def generate_section(self, g: WorksheetGenerator):
+        def hash_flop(f):
+            '''hash isn't consistent between invocations. this just takes a
+            dummy hash by multiplying the ords of the chars in a string'''
+            ords = [ord(c) for c in f.strip()]
+            hash = 5381
+            for x in ords:
+                hash = (hash << 5) + hash + x
+            return hash
         img_dir = osp.join(self.out_dir, "img")
         g.add_section(self.title, self.description)
         if isinstance(g, MarkdownWorksheetGenerator):
@@ -78,15 +86,16 @@ class Section:
 
             for f in self.flops:
                 flop_list = [f[i:i+2] for i in range(0, len(f), 2)]
+                combos = self.hero.range.combos()
 
                 # We want to make hands for each flop deterministic.  To do this
                 # we hash the flop to produce a seed and use this seed to seed
                 # random. This is robust to perterbations in in flop ordering,
                 # number of flops, and number of hands per flop.
 
-                SEED = hash(f)
+                assert isinstance(f, str)
+                SEED = hash_flop(f)
                 random.seed(SEED)
-                combos = self.hero.range.combos()
                 random.shuffle(combos)
                 g.add_flop_subsection(f)
                 # Enumerate flop-level questions

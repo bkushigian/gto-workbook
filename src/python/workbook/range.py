@@ -130,7 +130,7 @@ class Range:
         self._parse(range_str)
     
     def combos(self):
-        return list(self.combos_to_weights.keys())
+        return list(sorted(self.combos_to_weights.keys()))
 
     def hands(self, deadcards=None):
         if deadcards is None:
