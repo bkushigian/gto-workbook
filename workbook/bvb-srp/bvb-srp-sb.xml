@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<section>
+  <title>Sb opens, Bb Calls</title>
+  <name>bvb-srp-sb</name>
+  <description>Blinds are $0.05/$0.10. Effective stacks are $10.00. You're in the Sb. Action folds to you and you open for $0.30 (3bb). Bb calls and go to the flop with $9.70 behind and a pot of $0.60. Action is on you</description>
+  <config sb="0.05" bb="0.10" pot="0.60" effective-stack="9.70">
+    <hero pos="sb" ip="false" action="call" title="Smallblind Opens and Bigblind Calls">
+      <range>AA-22,AKs-A2s,KQs-K2s,QJs-Q5s,JTs-J6s,T9s-T6s,98s-96s,87s-85s,76s-75s,65s,54s,43s,AKo-A4o,KQo-K8o,QJo-Q8o,JTo-J9o,T9o,98o,[50.0000]Q4s-Q2s,J5s-J2s,T5s-T2s,95s-92s,84s-82s,74s-72s,64s-62s,53s-52s,42s,32s,A3o-A2o,K7o-K6o[/50.0000]</range>
+    </hero>
+    <villain pos="bn" ip="true" action="3bet" title="Button 3Bet Range vs Lojack Open">
+      <range>66-22,K8s-K2s,Q8s-Q2s,J8s-J2s,T7s-T6s,96s,85s,75s-74s,64s-63s,53s-52s,43s,A9o-A3o,KTo-K8o,QTo-Q9o,JTo-J9o,T9o</range>
+    </villain>
+  </config>
+
+  <!-- flops are shared between each scenario-->
+  <flops>
+    <flop>AsTd5c</flop>
+    <flop>Ts4s2s</flop>
+    <flop>7s6s6d</flop>
+    <flop>Qs8d6s</flop>
+    <flop>8s5d3d</flop>
+    <flop>Ks5d2s</flop>
+    <flop>QsQdJc</flop>
+    <flop>Js3d2c</flop>
+    <flop>QsTd7s</flop>
+    <flop>Ts9d6d</flop>
+    <flop>As8d4s</flop>
+    <flop>KsJd4d</flop>
+    <flop>As7s2d</flop>
+    <flop>9s4d3c</flop>
+    <flop>Ks9d7c</flop>
+  </flops>
+
+  <flop-questions>
+    <question>
+      Approximate each player's equity. Who has the equity advantage?
+    </question>
+    <question>
+      What are the weakest hands in your range that could go all in on the flop? Go for three streets of value on blank turns?
+    </question>
+    <question>
+      Which player has the nuts advantage?
+    </question>
+    <question>
+      How static or dynamic is this flop? What aspects of this flop make it more static or dynamic?  How do these aspects interact with one another?
+    </question>
+    <question>
+      Do you want to develop a betting range? Which hands prefer to bet?
+    </question>
+    <question>
+      Do you want to develop a checking range? If so, estimate a x/f, x/c, and x/r range?
+    </question>
+    <question>
+      Suppose you check and villain checks behind. What are the best and worst turn cards for your range? Do any give you an equity advantage? A nuts advantage? Uncap your range?
+    </question>
+    <question>
+      Suppose you check, villain bets 1/3 pot, and you call. What are the best and worst turn cards for your range? Do any give you an equity advantage? A nuts advantage? Uncap your range?
+    </question>
+  </flop-questions>
+  <hand-questions>
+    <question>Do you ever check/fold this hand?</question>
+    <question>Do you ever check/call this hand? If so, discuss your turn strategy.</question>
+    <question>Do you ever check/raise this hand? If so, should you expect better hands to fold? Worse hands to call? Which hands? Discuss your strategy when reraised. Discuss your turn strategy when called.</question>
+    <question>Does this hand benefit from protection bet?</question>
+    <question>Which aspects of this hand want to grow the pot? Which aspects want to play a smaller pot? How do they interact?</question>
+    <question>Does this hand ever bet? Which sizes should you choose (1/3 pot, 2/3 pot, 5/4 pot)? What is your strategy after getting called? After getting raised?</question>
+    <question>Suppose you check the flop and villain checks behind. Discuss your turn strategy.</question>
+  </hand-questions>
+</section>
