@@ -17,16 +17,36 @@ Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and ac
 ### Flop 1: <b>A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span></b>
 1. **Approximate each player's equity. Who has the equity advantage?**
 
+    LJ: 55%, BB: 45%
+
 2. **What are the weakest hands that could go all in on the flop? Go for three streets of value on blank turns?**
+
+    AQ+ can get it in on the flop, though they are also happy seeing turns.
+    2pairs also happy to get it in.
 
 3. **Which player has the nuts advantage?**
 
+    LJ has AA, TT, and a good chunk of 2pair (though BB also has as many 2pair,
+    if not more, as LJ). 
+
 4. **How static or dynamic is this flop? What aspects of this flop make it more static or dynamic?  How do these aspects interact with one another?**
+
+    This is a very static flop.
 
 5. **On this flop do you prefer to bet small or large?  With what frequencies would you check and bet?**
 
+    In the LJ I want to bet small with range.
+
 6. **Say you adopt a strategy where you either bet with your preferred sizing or check. You choose to bet and villain calls. What are the best and worst turn cards for your range?**
 
+    + **Best Turns:** Any K, Q or J should be really good. Preferrably a heart,
+      but that doesn't matter too much. I'm not sure about an A. This blocks
+      a lot of our strongest holdings but also blocks a good chunk of their
+      value calling range.
+
+    + **Worst Turns:** We don't want to see a 5 or a T. The 5 is especially bad
+      since it
+ 
 #### Hands for flop A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>
 1. <b>Q<span style="color:#0088ff;">&diams;</span>9<span style="color:#0088ff;">&diams;</span></b>    (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
 

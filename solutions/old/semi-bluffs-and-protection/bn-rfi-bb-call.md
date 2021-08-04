@@ -48,6 +48,7 @@ _Blinds are $0.05/$0.10. Effective stacks are $10.00. You're on the button and a
    worst turn cards for your range?**
 
    I prefer a small cbet with 100% frequency.
+
 #### Hands
 1. <b>J<span style="color:#008800;">&clubs;</span>T<span style="color:#ff0000;">&hearts;</span></b> (Flop: A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span>)
     1. **If you bet this hand should you expect better hands to fold?**

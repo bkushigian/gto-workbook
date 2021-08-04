@@ -324,23 +324,58 @@ Blinds are $0.05/$0.10. Effective stacks are $10.00. You're in the LJ and you op
 
     1. **Do you ever check/fold this hand?**
 
+        No. We have middle pair (so some showdown), and backdoor flush/straight
+        draws.
+
     2. **Do you ever check/call this hand?**
+
+        Yes, though I might hazard a check/raise instead?
 
     3. **If you check/raise this hand should you expect better hands to fold? If so, which hands?**
 
+        No.
+
     4. **If you check/raise this hand should you expect worse hands to call? If so, which hands?**
+
+        Some draws, but not really. We don't expect to be ahead.
 
     5. **Does this hand ever donk bet 1/2 pot?**
 
+        Yes, as a bluff.
+
     6. **Does this hand benefit from protection bet?**
+
+        In theory, though I dont know if we ever get villain to fold like KQ or
+        KJ here.
 
     7. **Does this hand benefit from growing the pot?**
 
+        No.
+
     8. **How is this hand doing if you check/raise and get called? What parts of villain's range are you ahead of? Behind?**
+
+        Pretty bad. We are behind most of their range. They are calling with
+        top pairs, two pairs, some sets. They should also call with like KQs, KJs
+        with BDFD, so we are ahead of a bit of their calling range.
 
     9. **How is this hand doing against a bet or raise when you check or bet respectively?**
 
+        This hand doesn't want to see any aggression. This hand is going
+        to be betting as a bluff or trying to get to showdown for cheap.
+
     10. **Suppose you check the flop and villain checks behind. What are the best and worst turn cards for this hand?**
+
+        Any T or J are good for us. If we do see a Q or a K we have a gutter
+        BUT villain's range has improved drastically so it's a double edge
+        sword...most/all of their unpaired hands have improved as well.
+
+        We are probably fine seeing a lower card (not a 9 or 5). We might
+        be okay seeing a 5 since that uncaps our range, which will be good
+        for bluffing (which is why we have this hand).
+
+        We also pick up some equity/EV w/ a spade. Interesting: if we see,
+        say, K&spades; villian makes a lot of pair/2pair which limits our
+        
 
     11. **Suppose you check the flop, villain bets 1/3 pot, and and you call behind. What are the best and worst turn cards for this hand?**
 
