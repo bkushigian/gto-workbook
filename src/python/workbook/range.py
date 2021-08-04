@@ -11,12 +11,16 @@ def is_unsuited(combo):
     return len(combo) == 3 and combo[2] == 'o'
 
 def expand_combo(combo, deadcards=None):
+    '''
+    Expand a combo, excluding dead cards, and return a sorted list of combos.
+    '''
+
     if is_suited(combo):
-        return expand_suited_combo(combo, deadcards)
+        return sorted(expand_suited_combo(combo, deadcards))
     if is_unsuited(combo):
-        return expand_unsuited_combo(combo, deadcards)
+        return sorted(expand_unsuited_combo(combo, deadcards))
     if is_pair(combo):
-        return expand_pair_combo(combo, deadcards)
+        return sorted(expand_pair_combo(combo, deadcards))
     raise RuntimeError("Invalid combo, cannot expand: " + combo)
 
 def expand_suited_combo(combo, deadcards=None):
