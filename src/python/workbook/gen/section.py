@@ -86,14 +86,14 @@ class Section:
 
                 SEED = hash(f)
                 random.seed(SEED)
+                combos = self.hero.range.combos()
+                random.shuffle(combos)
                 g.add_flop_subsection(f)
                 # Enumerate flop-level questions
                 for question in self.flop_questions:
                     g.add_flop_question(question)
 
                 g.add_hands_subsection(f"Hands for flop {suit_to_html(f)}")
-                combos = self.hero.range.combos()
-                random.shuffle(combos)
                 for combo in  combos[:10]:
                     hands = expand_combo(combo, deadcards=flop_list)
                     random.shuffle(hands)
