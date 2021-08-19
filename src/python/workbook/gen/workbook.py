@@ -3,18 +3,20 @@ Takes a directory as an input and a location as an output. Traverse
 the workbook xml structure, rooted at the input, and output the workbook
 rooted at output.
 """
+import os
 import xml.etree.ElementTree as ET
 import random
 import os.path as osp
 from os import makedirs
 from sys import argv, exit, stderr
 from workbook.gen.chapter import Chapter
+from workbook import rmdir
 
 
 class Workbook:
     def __init__(self, root_dir, out_dir, out_format='md'):
         self.root_dir = root_dir
-        self.out_dir = out_dir
+        self.out_dir = osp.join(out_dir, "gto-workbook")
         self.out_format = out_format
         xml = osp.join(root_dir, "workbook.xml")
         root = ET.parse(xml).getroot()
@@ -25,7 +27,7 @@ class Workbook:
         self.chapters = []
         for name in chapter_names:
             try:
-                self.chapters.append(Chapter(osp.join(root_dir, name), osp.join(out_dir, name), out_format))
+                self.chapters.append(Chapter(osp.join(root_dir, name), osp.join(self.out_dir, name), out_format))
             except FileNotFoundError:
                 print("[!] Couldn't find chapter", osp.join(root_dir, name), file=stderr)
                 print("    Continuing without this chapter", file=stderr)
@@ -35,6 +37,8 @@ class Workbook:
         Write this workbook to the output location
         """
 
+        if os.path.exists(self.out_dir) and os.path.exists(os.path.join(self.out_dir, "gto-workbook")):
+            rmdir.rmdir(self.out_dir)
         makedirs(self.out_dir)
         lines = []
         lines.append(f"# {self.title}")
