@@ -38,7 +38,6 @@ class Player:
 class Section:
     def __init__(self, xml_file, out_dir, parent=None):
         self.xml_file = xml_file
-        self.out_dir = out_dir
         self.parent = parent
         root = ET.parse(xml_file).getroot()
         self.root = root
@@ -50,33 +49,49 @@ class Section:
         self.flops = [f.text for f in root.find('flops')]
         self.flop_questions = [q.text.strip() for q in root.find('flop-questions')]
         self.hand_questions = [q.text.strip() for q in root.find('hand-questions')]
+        self.out_dir = osp.join(out_dir, self.name)
         
     def __str__(self):
         return str(self.worksheet_gen)
 
-    def as_markdown(self):
+    def as_markdown(self) -> str:
+        '''
+        Generate this section as markdown text and return a string containing
+        that text. Other files, such as flop files, are generated and written to
+        disk. Handles to these files are not returned.
+        '''
         return self.generate_section(MarkdownWorksheetGenerator())
 
     def as_text(self):
         return self.generate_section(WorksheetGenerator())
 
-    def generate_section(self, g: WorksheetGenerator):
-        def hash_flop(f):
-            '''hash isn't consistent between invocations. this just takes a
-            dummy hash by multiplying the ords of the chars in a string'''
+    def generate_section(self, g: WorksheetGenerator) -> str:
+        '''
+        Generate this section using a WorksheetGenerator and return the text
+        file's contents.  Other files, such as flop files, are written as
+        needed.
+        '''
+
+        def hash_flop(f: str):
+            '''
+            For security reasons, Python's built-in `hash` function isn't
+            consistent between invocations. This function implements a dummy
+            hash by multiplying the ords of the chars in a string
+            '''
             ords = [ord(c) for c in f.strip()]
             hash = 5381
             for x in ords:
                 hash = (hash << 5) + hash + x
             return hash
+
         img_dir = osp.join(self.out_dir, "img")
         g.add_section(self.title, self.description)
         if isinstance(g, MarkdownWorksheetGenerator):
             g.add_range_subsection()
             hero_range_title = f"{self.name}-hero-range.jpg"
             villain_range_title = f"{self.name}-villain-range.jpg"
-            self.hero.range.as_image(output_file=f"{img_dir}/{hero_range_title}")
-            self.villain.range.as_image(output_file=f"{img_dir}/{villain_range_title}")
+            self.hero.range.as_image(output_file=osp.join(img_dir, hero_range_title))
+            self.villain.range.as_image(output_file=osp.join(img_dir, villain_range_title))
             g.add_player_range(title="Hero's {} Range".format(self.hero.range_title),
                                 range_table="![Hero's Range]({})".format(f"img/{hero_range_title}"))
 
@@ -97,7 +112,12 @@ class Section:
                 SEED = hash_flop(f)
                 random.seed(SEED)
                 random.shuffle(combos)
-                g.add_flop_subsection(f)
+                g.add_flop_entry(f)
+                g._flop_generator.add_player_range(title="Hero's {} Range".format(self.hero.range_title),
+                                    range_table="![Hero's Range]({})".format(f"img/{hero_range_title}"))
+
+                g._flop_generator.add_player_range(title="Villain's {} Range".format(self.villain.range_title),
+                                    range_table="![Villain's Range]({})".format(f"img/{villain_range_title}"))
                 # Enumerate flop-level questions
                 for question in self.flop_questions:
                     g.add_flop_question(question)
@@ -110,6 +130,9 @@ class Section:
                     g.add_hand(hand)
                     for question in self.hand_questions:
                         g.add_hand_question(question)
+        for fg in g._flop_generators:
+            with open(osp.join(self.out_dir, fg.basename()), 'w') as f:
+                f.write(str(fg))
         return str(g)
 
     def to_text_file(self, filename):

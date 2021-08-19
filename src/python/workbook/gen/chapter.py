@@ -20,12 +20,13 @@ class Chapter:
     
     def generate_chapter(self):
         makedirs(self.out_dir)
-        makedirs(osp.join(self.out_dir, "img"))
         lines = []
         lines.append(f"# {self.title}")
         for i,section in enumerate(self.sections):
+            makedirs(section.out_dir)
+            makedirs(osp.join(section.out_dir, "img"))
             section_content = section.generate_section(MarkdownWorksheetGenerator())
-            section_file = f"{self.out_dir}/{section.name}.md"
+            section_file = f"{section.out_dir}/section.md"
             rel_section_file = osp.relpath(section_file, self.out_dir)
             with open(section_file, "w+") as f:
                 f.write(section_content)

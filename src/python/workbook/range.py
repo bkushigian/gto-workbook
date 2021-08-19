@@ -207,6 +207,7 @@ class Range:
         html += self.as_html_table(range_id=range_id, width=width, height=height, pair_rgb=pair_rgb, suited_rgb=suited_rgb,
                                    offsuit_rgb=offsuit_rgb, max_color_weight=max_color_weight, min_color_weight=min_color_weight)
         print(output_file)
+        
         imgkit.from_string(html, output_file)
 
 
