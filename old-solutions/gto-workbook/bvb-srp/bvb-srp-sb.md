@@ -17,9 +17,33 @@ Blinds are $0.05/$0.10. Effective stacks are $10.00. You're in the Sb. Action fo
 ### Flop 1: <b>A<span style="color:#000000;">&spades;</span>T<span style="color:#0088ff;">&diams;</span>5<span style="color:#008800;">&clubs;</span></b>
 1. **Approximate each player's equity. Who has the equity advantage?**
 
+    SB should have about 55% equity
+
 2. **What are the weakest hands in your range that could go all in on the flop? Go for three streets of value on blank turns?**
 
+    Weakest hands I'd shove for value:
+    + Some top pair (AK, AQ)
+    
+    Possible bluff shoves:
+    + Some KQ, KJ, QJ w/ a BDFD?
+
+    Weakest hands I'd call a shove with:
+    + Probably some top pair (AK, AQ)
+
+    + **Question:** how do suits affect my calling range? Do I prefer to block or
+      unblock flush draws? I'd imagine I'd rather unblock flush draws. This means
+      I'd probably prefer to call with AhKh than AdKd.
+      BB doesn't have QJ in range, but if they did I'd prefer to unblock it as
+      a potential bluff.
+
+
 3. **Which player has the nuts advantage?**
+   About even, maybe? We can have AA, TT, and 55, versus BB's 55. We do
+   have about 3x the hands in range as BB so we should have around the same percentage
+   sets, but ours are stronger. We also have AT, all A5 (they have A5o tho), and some T5s.
+   Thus we have better 2pair, though  they should have a similar number of combos.
+
+
 
 4. **How static or dynamic is this flop? What aspects of this flop make it more static or dynamic?  How do these aspects interact with one another?**
 
