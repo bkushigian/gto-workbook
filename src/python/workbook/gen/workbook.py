@@ -37,7 +37,7 @@ class Workbook:
         Write this workbook to the output location
         """
 
-        if os.path.exists(self.out_dir) and os.path.exists(os.path.join(self.out_dir, "gto-workbook")):
+        if os.path.exists(self.out_dir) and os.path.basename(self.out_dir) == "gto-workbook":
             rmdir.rmdir(self.out_dir)
         makedirs(self.out_dir)
         lines = []
