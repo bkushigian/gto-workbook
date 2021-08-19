@@ -112,12 +112,13 @@ class Section:
                 SEED = hash_flop(f)
                 random.seed(SEED)
                 random.shuffle(combos)
-                g.add_flop_entry(f)
-                g._flop_generator.add_player_range(title="Hero's {} Range".format(self.hero.range_title),
+                fg = g.add_flop_entry(f)
+                fg.add_player_range(title="Hero's {} Range".format(self.hero.range_title),
                                     range_table="![Hero's Range]({})".format(f"img/{hero_range_title}"))
 
-                g._flop_generator.add_player_range(title="Villain's {} Range".format(self.villain.range_title),
+                fg.add_player_range(title="Villain's {} Range".format(self.villain.range_title),
                                     range_table="![Villain's Range]({})".format(f"img/{villain_range_title}"))
+                fg.add_flop_questions("## Flop Questions")
                 # Enumerate flop-level questions
                 for question in self.flop_questions:
                     g.add_flop_question(question)

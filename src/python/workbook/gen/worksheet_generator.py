@@ -72,6 +72,7 @@ class WorksheetGenerator:
         self._flop_num += 1
         self._flop_generator = FlopEntryGenerator(flop, self._flop_num, header)
         self._flop_generators.append(self._flop_generator)
+        return self._flop_generator
     
     def add_flop_question(self, question):
         self._flop_generator.add_flop_question(question + '\n')
@@ -109,10 +110,9 @@ class MarkdownWorksheetGenerator(WorksheetGenerator):
 
     def add_flop_entry(self, flop):
         self.current_flop = flop
-        link = f"## [Flop {self.next_flop_num()}: <b>{suit_to_html(flop)}</b>]({flop}.md)"
+        link = f"## Flop {self.next_flop_num()}: [<b>{suit_to_html(flop)}</b>]({flop}.md)"
         header = f"# Flop {self.next_flop_num()}: <b>{suit_to_html(flop)}</b>"
-        super().add_flop_entry(flop, link, header)
-        self._flop_generator._lines.append("## Flop Questions")
+        return super().add_flop_entry(flop, link, header)
 
     def add_flop_question(self, question):
         flop_question_num = self._flop_generator._flop_question_num + 1
@@ -143,6 +143,9 @@ class FlopEntryGenerator:
         self._hand_num = 0
         self._in_hands_subsection = False
         self._lines = [header]
+
+    def add_flop_questions(self, header):
+        self._lines.append(header + '\n')
 
     def add_flop_question(self, question):
         if not self._flop_num:
